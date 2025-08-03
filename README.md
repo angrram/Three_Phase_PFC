@@ -1,8 +1,10 @@
 # Hardware-in-the-Loop (DiY) with STM32F7 & Spartan-7 (Cmod S7)
 
 # ⚡   Three-Phase PFC (Phase Lock Lookup) 
-
-
+ ![IMG_3001](https://github.com/user-attachments/assets/965281d8-26f1-4e53-920c-ff94b99f25d3)
+<img width="1250" height="881" alt="Pasted image 20250511104047" src="https://github.com/user-attachments/assets/ec46c701-d324-4950-be88-652f79f3bce3" />
+<img width="1252" height="886" alt="Pasted image 20250511104250" src="https://github.com/user-attachments/assets/f80536e8-9f37-45f2-bca7-b0103ae949f8" />
+<img width="1260" height="883" alt="Pasted image 20250511104432" src="https://github.com/user-attachments/assets/21e63108-2f31-42b0-ad9c-b97e8b5e1981" />
 
 
 ## 📦 Project Structure
@@ -42,7 +44,7 @@ HIL-3Phase-PFC
 
 - Real-time HIL simulation of a 3-phase AC/DC PFC stage
 - FPGA-based fast plant model (fixed-step solver at 110MHz rate), FETs were linearize.
-- Digital control loop implementation on STM32F7 (PID, PLL Dsogi).
+- Digital control loop implementation on STM32F7 @8Khz (which is ok for a S7) (PID, PLL Dsogi).
 - MATLAB/Simulink/Simscape model for validation using PiL, MiL.
 - Scalable for DSP or other FPGA platforms.
 
