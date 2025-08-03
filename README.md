@@ -45,7 +45,7 @@ HIL-3Phase-PFC
 
 ## 🔌 Key Features
 
-- Real-time HIL simulation of a 3-phase AC/DC PFC stage
+- Real-time HIL simulation of a 3-phase AC/DC PFC stage DACs MCP4922.
 - FPGA-based fast plant model (fixed-step solver at 110MHz rate), FETs were linearize.
 - Digital control loop implementation on STM32F7 @8Khz (which is ok for a S7) (PID, PLL Dsogi).
 - MATLAB/Simulink/Simscape model for validation using PiL, MiL.
