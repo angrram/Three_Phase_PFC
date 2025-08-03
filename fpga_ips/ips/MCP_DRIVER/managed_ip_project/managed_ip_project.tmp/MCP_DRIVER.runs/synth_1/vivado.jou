@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec 30 15:37:17 2024
+# Process ID: 4476
+# Current directory: c:/Users/angro/Desktop/hil/ips/MCP_DRIVER/managed_ip_project/managed_ip_project.tmp/MCP_DRIVER.runs/synth_1
+# Command line: vivado.exe -log SPI_DAC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_DAC.tcl
+# Log file: c:/Users/angro/Desktop/hil/ips/MCP_DRIVER/managed_ip_project/managed_ip_project.tmp/MCP_DRIVER.runs/synth_1/SPI_DAC.vds
+# Journal file: c:/Users/angro/Desktop/hil/ips/MCP_DRIVER/managed_ip_project/managed_ip_project.tmp/MCP_DRIVER.runs/synth_1\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :25598 MB
+# Total Virtual     :34033 MB
+# Available Virtual :15400 MB
+#-----------------------------------------------------------
+source SPI_DAC.tcl -notrace

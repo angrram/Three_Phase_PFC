@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May  2 09:19:14 2025
+# Process ID         : 21496
+# Current directory  : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim
+# Command line       : vivado.exe -mode batch -source _vivado_program.cmd
+# Log file           : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/vivado.log
+# Journal file       : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim\vivado.jou
+# Running On         : AngelPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 265KF
+# CPU Frequency      : 3878 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 20
+# Host memory        : 34042 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36190 MB
+# Available Virtual  : 19145 MB
+#-----------------------------------------------------------
+source _vivado_program.cmd
+# set chain_position 0
+# open_hw
+WARNING: 'open_hw' is deprecated, please use 'open_hw_manager' instead.
+# connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-19:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210376BA12FEA
+# current_hw_device [lindex [get_hw_devices] $chain_position]
+# refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] $chain_position]
+INFO: [Labtools 27-1434] Device xc7s25 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+# set_param xicom.use_bitstream_version_check false
+# set_property PROGRAM.FILE {C:\Users\Angel\Desktop\hil\pfc3ph\matlab\sim\simscape_system_fil\simscape_system_fil.bit} [lindex [get_hw_devices] $chain_position]
+# program_hw_devices [lindex [get_hw_devices] $chain_position]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# disconnect_hw_server
+INFO: [Common 17-206] Exiting Vivado at Fri May  2 09:19:24 2025...

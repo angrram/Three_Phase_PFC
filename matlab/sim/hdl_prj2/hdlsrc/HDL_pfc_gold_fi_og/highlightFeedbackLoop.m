@@ -1,0 +1,14 @@
+open_system('HDL_pfc_gold_fi_og');
+open_system('gm_HDL_pfc_gold_fi_og');
+cs.HiliteType = 'user4';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'darkGreen';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_HDL_pfc_gold_fi_og/simscape_system/simscape_system/FET_CTRL', 'user4');
+hilite_system('HDL_pfc_gold_fi_og/simscape_system/FET_CTRL', 'user4');
+cs.HiliteType = 'user4';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'darkGreen';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_HDL_pfc_gold_fi_og/simscape_system/simscape_system/HDL Subsystem', 'user4');
+hilite_system('HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem', 'user4');

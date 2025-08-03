@@ -1,0 +1,8 @@
+-IC:/Users/Angel/Desktop/hil/pfc3ph/stf7/matlab/ctrl_ez
+-IC:/Users/Angel/Desktop/hil/pfc3ph/stf7/matlab/ctrl_ez/ARMCortex-M/_ref/ctrl_ez
+-I"C:/Program Files/MATLAB/R2024b/extern/include"
+-I"C:/Program Files/MATLAB/R2024b/simulink/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/common"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/ert"
+-IC:/Users/Angel/Desktop/hil/pfc3ph/stf7/matlab/ctrl_ez/ARMCortex-M/_shared

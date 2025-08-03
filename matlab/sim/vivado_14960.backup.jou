@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May  2 09:10:17 2025
+# Process ID         : 14960
+# Current directory  : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim
+# Command line       : vivado.exe -mode batch -source _vivado_program.cmd
+# Log file           : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/vivado.log
+# Journal file       : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim\vivado.jou
+# Running On         : AngelPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 265KF
+# CPU Frequency      : 3878 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 20
+# Host memory        : 34042 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36190 MB
+# Available Virtual  : 18984 MB
+#-----------------------------------------------------------
+source _vivado_program.cmd

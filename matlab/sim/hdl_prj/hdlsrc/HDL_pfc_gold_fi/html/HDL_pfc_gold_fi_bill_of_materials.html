@@ -1,0 +1,2231 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+High-level Resource Utilization Report for HDL_pfc_gold_fi
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdBillOfMaterials'); else local_onload();}} catch(err) {};hdlTableShrink(this, 'Adder_1_1');hdlTableShrink(this, 'Register_1_1');hdlTableShrink(this, 'Multiplexer_1_1');hdlTableShrink(this, 'Input_Port');hdlTableShrink(this, 'Output_Port');hdlTableShrink(this, 'Multiplier_2_1');hdlTableShrink(this, 'Adder_2_1');hdlTableShrink(this, 'Adder_2_2');hdlTableShrink(this, 'Adder_2_3');hdlTableShrink(this, 'Adder_2_4');hdlTableShrink(this, 'Register_2_2');hdlTableShrink(this, 'Register_2_3');hdlTableShrink(this, 'Register_2_5');hdlTableShrink(this, 'Register_2_6');hdlTableShrink(this, 'Register_2_7');hdlTableShrink(this, 'Register_2_9');hdlTableShrink(this, 'RAM_2_2');hdlTableShrink(this, 'Multiplexer_2_1');hdlTableShrink(this, 'Multiplexer_2_2');hdlTableShrink(this, 'Multiplexer_2_3');hdlTableShrink(this, 'Multiplexer_2_4');hdlTableShrink(this, 'Multiplexer_2_5');hdlTableShrink(this, 'Multiplexer_2_6');hdlTableShrink(this, 'Multiplexer_2_7');hdlTableShrink(this, 'Multiplexer_2_8');hdlTableShrink(this, 'Multiplexer_2_9');hdlTableShrink(this, 'Multiplexer_2_10');hdlTableShrink(this, 'Multiplier_3_1');hdlTableShrink(this, 'Adder_3_1');hdlTableShrink(this, 'Adder_3_3');hdlTableShrink(this, 'Adder_3_4');hdlTableShrink(this, 'Subtractor_3_1');hdlTableShrink(this, 'Subtractor_3_2');hdlTableShrink(this, 'Register_3_1');hdlTableShrink(this, 'Register_3_4');hdlTableShrink(this, 'Register_3_5');hdlTableShrink(this, 'Register_3_6');hdlTableShrink(this, 'Multiplexer_3_1');hdlTableShrink(this, 'Multiplexer_3_3');hdlTableShrink(this, 'Multiplexer_3_4');hdlTableShrink(this, 'Multiplexer_3_5');hdlTableShrink(this, 'Multiplexer_3_6');hdlTableShrink(this, 'Multiplexer_3_7');">
+<script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<font SIZE="+2" COLOR="#000066">
+Generic Resource Report for HDL_pfc_gold_fi
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Multipliers
+</td>
+<td align="center" valign="top" style="border-style: none">
+31
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Adders/Subtractors
+</td>
+<td align="center" valign="top" style="border-style: none">
+85
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+322
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Total 1-Bit Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+8970
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+RAMs
+</td>
+<td align="center" valign="top" style="border-style: none">
+13
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Multiplexers
+</td>
+<td align="center" valign="top" style="border-style: none">
+73
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+I/O Bits
+</td>
+<td align="center" valign="top" style="border-style: none">
+226
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Static Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Dynamic Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:106')" name="code2model" class="code2model">
+simscape_system
+</a>
+
+</h5>
+<h5>
+Adders/Subtractors (2)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+6x6-bit Adder 							: 2
+</span>
+<span name="Adder_1_1" id="Adder_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:899')" name="code2model" class="code2model">
+ctr_0_36
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (6)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+6-bit Register 							: 4
+</span>
+<span name="Register_1_1" id="Register_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:899')" name="code2model" class="code2model">
+ctr_0_36
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+1-bit Register 							: 2
+</span>
+<br /><h5>
+Multiplexers (2)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+6-bit 2-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_1_1" id="Multiplexer_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:899')" name="code2model" class="code2model">
+ctr_0_36
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Number of I/O Bits (226)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Input_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Input Bits: 81
+</span>
+<span name="Input_Port" id="Input_Port">
+<ul class="SystemdefinedCollapse" id="239885b4-5428-4afe-93e3-fd4109ac932c" dataCollapse="off">
+<li>
+clk: 1 bit
+</li>
+<li>
+reset: 1 bit
+</li>
+<li>
+clk_enable: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:107')" name="code2model" class="code2model">
+UP_L1
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:108')" name="code2model" class="code2model">
+DW_L1
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:109')" name="code2model" class="code2model">
+UP_L2
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:110')" name="code2model" class="code2model">
+DW_L2
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:111')" name="code2model" class="code2model">
+UP_L3
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:112')" name="code2model" class="code2model">
+DW_L3
+</a>
+: 1 bit
+</li>
+<li>
+I_load_in: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:114')" name="code2model" class="code2model">
+va_i
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:115')" name="code2model" class="code2model">
+vb_i
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:116')" name="code2model" class="code2model">
+vc_i
+</a>
+: 18 bits
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '239885b4-5428-4afe-93e3-fd4109ac932c')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Output_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Output Bits: 145
+</span>
+<span name="Output_Port" id="Output_Port">
+<ul>
+<li>
+ce_out: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:337')" name="code2model" class="code2model">
+O_Ia
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:338')" name="code2model" class="code2model">
+O_Ib
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:339')" name="code2model" class="code2model">
+O_Ic
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:340')" name="code2model" class="code2model">
+O_Vc
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:341')" name="code2model" class="code2model">
+O_Vb
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:342')" name="code2model" class="code2model">
+O_Va
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:343')" name="code2model" class="code2model">
+O_Vout
+</a>
+: 18 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:344')" name="code2model" class="code2model">
+O_I_load
+</a>
+: 18 bits
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:432')" name="code2model" class="code2model">
+HDL Subsystem
+</a>
+
+</h5>
+<h5>
+Multipliers (29)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplier_2_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25x25-bit Multiplier 							: 29
+</span>
+<span name="Multiplier_2_1" id="Multiplier_2_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Adders/Subtractors (74)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_2_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+3x3-bit Adder 							: 26
+</span>
+<span name="Adder_2_1" id="Adder_2_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:870')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:826')" name="code2model" class="code2model">
+ctr_0_6_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:295')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:403')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_2_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+5x5-bit Adder 							: 2
+</span>
+<span name="Adder_2_2" id="Adder_2_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:778')" name="code2model" class="code2model">
+ctr_0_19
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:591')" name="code2model" class="code2model">
+ctr_0_19
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_2_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+50x50-bit Adder 							: 25
+</span>
+<span name="Adder_2_3" id="Adder_2_3">
+<ul class="SystemdefinedCollapse" id="cb301569-5739-429d-8ae8-eb65f8da52f2" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder7
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+adder5
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'cb301569-5739-429d-8ae8-eb65f8da52f2')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_2_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25x25-bit Adder 							: 21
+</span>
+<span name="Adder_2_4" id="Adder_2_4">
+<ul class="SystemdefinedCollapse" id="485f8c9e-4f69-4b71-8f24-b7105124ddb7" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc7
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc8
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc9
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc10
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc11
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc12
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc13
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc14
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc15
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc16
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc17
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc18
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc19
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+sumStateEqnComp
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc7
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc8
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc9
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc10
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc11
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc12
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc13
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc14
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc15
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc16
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc17
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc18
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+dtc19
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:556')" name="code2model" class="code2model">
+sumOuputEqnComp
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '485f8c9e-4f69-4b71-8f24-b7105124ddb7')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><h5>
+Registers (260)
+</h5>
+<span style="font-family:monospace">
+72-bit Register 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+3-bit Register 							: 64
+</span>
+<span name="Register_2_2" id="Register_2_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:870')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:826')" name="code2model" class="code2model">
+ctr_0_6_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:295')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:302')" name="code2model" class="code2model">
+delayMatch
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:833')" name="code2model" class="code2model">
+delayMatch1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:403')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:410')" name="code2model" class="code2model">
+delayMatch
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+5-bit Register 							: 8
+</span>
+<span name="Register_2_3" id="Register_2_3">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:778')" name="code2model" class="code2model">
+ctr_0_19
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:591')" name="code2model" class="code2model">
+ctr_0_19
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+125-bit Register 							: 8
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+50-bit Register 							: 87
+</span>
+<span name="Register_2_5" id="Register_2_5">
+<ul class="SystemdefinedCollapse" id="80e8ad7f-a1d5-4827-bcfc-50cd43c42737" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:763')" name="code2model" class="code2model">
+PipelineRegister
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:796')" name="code2model" class="code2model">
+dot_product1_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:774')" name="code2model" class="code2model">
+tappedDelay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:280')" name="code2model" class="code2model">
+PipelineRegister
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:313')" name="code2model" class="code2model">
+dot_product1_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:291')" name="code2model" class="code2model">
+tappedDelay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:388')" name="code2model" class="code2model">
+PipelineRegister
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:421')" name="code2model" class="code2model">
+dot_product1_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:399')" name="code2model" class="code2model">
+tappedDelay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:576')" name="code2model" class="code2model">
+PipelineRegister
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:609')" name="code2model" class="code2model">
+dot_product1_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:587')" name="code2model" class="code2model">
+tappedDelay
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '80e8ad7f-a1d5-4827-bcfc-50cd43c42737')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_6')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25-bit Register 							: 80
+</span>
+<span name="Register_2_6" id="Register_2_6">
+<ul class="SystemdefinedCollapse" id="6225cc76-0ad4-43cc-93ee-ff365ba195c0" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:765')" name="code2model" class="code2model">
+HwModeRegister1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:893')" name="code2model" class="code2model">
+delayMatch
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:282')" name="code2model" class="code2model">
+HwModeRegister1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:822')" name="code2model" class="code2model">
+delayMatch_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:844')" name="code2model" class="code2model">
+delayInSignal_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:887')" name="code2model" class="code2model">
+delayOutSignal_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:390')" name="code2model" class="code2model">
+HwModeRegister1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:820')" name="code2model" class="code2model">
+tapped_delay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:898')" name="code2model" class="code2model">
+crp_out_delay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:204')" name="code2model" class="code2model">
+State_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:865')" name="code2model" class="code2model">
+tapped_delay_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:578')" name="code2model" class="code2model">
+HwModeRegister1
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '6225cc76-0ad4-43cc-93ee-ff365ba195c0')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_7')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 1
+</span>
+<span name="Register_2_7" id="Register_2_7">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:190')" name="code2model" class="code2model">
+State_ctrl_delay
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+100-bit Register 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_9')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit Register 							: 8
+</span>
+<span name="Register_2_9" id="Register_2_9">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:196')" name="code2model" class="code2model">
+t_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:197')" name="code2model" class="code2model">
+t1_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:198')" name="code2model" class="code2model">
+t2_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:199')" name="code2model" class="code2model">
+t3_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:200')" name="code2model" class="code2model">
+t4_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:201')" name="code2model" class="code2model">
+t5_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:202')" name="code2model" class="code2model">
+t6_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:203')" name="code2model" class="code2model">
+t7_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+RAMs (11)
+</h5>
+<span style="font-family:monospace">
+8x72-bit RAM 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'RAM_2_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+8x5-bit RAM 							: 2
+</span>
+<span name="RAM_2_2" id="RAM_2_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:785')" name="code2model" class="code2model">
+u_ShiftRegisterRAM
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:598')" name="code2model" class="code2model">
+u_ShiftRegisterRAM
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+8x125-bit RAM 							: 4
+</span>
+<br /><span style="font-family:monospace">
+8x50-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x100-bit RAM 							: 1
+</span>
+<br /><span style="font-family:monospace">
+8x25-bit RAM 							: 1
+</span>
+<br /><h5>
+Multiplexers (56)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+3-bit 2-to-1 Multiplexer 							: 26
+</span>
+<span name="Multiplexer_2_1" id="Multiplexer_2_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:870')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:826')" name="code2model" class="code2model">
+ctr_0_6_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:295')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:403')" name="code2model" class="code2model">
+ctr_0_6
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+5-bit 2-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_2_2" id="Multiplexer_2_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:778')" name="code2model" class="code2model">
+ctr_0_19
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:591')" name="code2model" class="code2model">
+ctr_0_19
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25-bit 140-to-1 Multiplexer 							: 4
+</span>
+<span name="Multiplexer_2_3" id="Multiplexer_2_3">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:784')" name="code2model" class="code2model">
+splitcomp_multiport
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:791')" name="code2model" class="code2model">
+splitcomp_multiport_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:597')" name="code2model" class="code2model">
+splitcomp_multiport
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:604')" name="code2model" class="code2model">
+splitcomp_multiport_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+50-bit 2-to-1 Multiplexer 							: 4
+</span>
+<span name="Multiplexer_2_4" id="Multiplexer_2_4">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:797')" name="code2model" class="code2model">
+dot_product1_enb
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:314')" name="code2model" class="code2model">
+dot_product1_enb
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:422')" name="code2model" class="code2model">
+dot_product1_enb
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:610')" name="code2model" class="code2model">
+dot_product1_enb
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25-bit 7-to-1 Multiplexer 							: 4
+</span>
+<span name="Multiplexer_2_5" id="Multiplexer_2_5">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:882')" name="code2model" class="code2model">
+splitcomp_multiport
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:832')" name="code2model" class="code2model">
+splitcomp_multiport_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:839')" name="code2model" class="code2model">
+splitcomp_multiport_2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:876')" name="code2model" class="code2model">
+splitcomp_multiport_3
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_6')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25-bit 63-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_2_6" id="Multiplexer_2_6">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:301')" name="code2model" class="code2model">
+splitcomp_multiport
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:308')" name="code2model" class="code2model">
+splitcomp_multiport_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_7')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25-bit 2-to-1 Multiplexer 							: 3
+</span>
+<span name="Multiplexer_2_7" id="Multiplexer_2_7">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:845')" name="code2model" class="code2model">
+delayInSignal_enb
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:888')" name="code2model" class="code2model">
+delayOutSignal_enb
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:859')" name="code2model" class="code2model">
+State_switch
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_8')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25-bit 42-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_2_8" id="Multiplexer_2_8">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:409')" name="code2model" class="code2model">
+splitcomp_multiport
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:416')" name="code2model" class="code2model">
+splitcomp_multiport_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_9')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+25-bit 14-to-1 Multiplexer 							: 1
+</span>
+<span name="Multiplexer_2_9" id="Multiplexer_2_9">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:204')" name="code2model" class="code2model">
+State_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_10')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit 2-to-1 Multiplexer 							: 8
+</span>
+<span name="Multiplexer_2_10" id="Multiplexer_2_10">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:196')" name="code2model" class="code2model">
+t_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:197')" name="code2model" class="code2model">
+t1_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:198')" name="code2model" class="code2model">
+t2_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:199')" name="code2model" class="code2model">
+t3_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:200')" name="code2model" class="code2model">
+t4_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:201')" name="code2model" class="code2model">
+t5_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:202')" name="code2model" class="code2model">
+t6_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:203')" name="code2model" class="code2model">
+t7_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:506')" name="code2model" class="code2model">
+FET_CTRL
+</a>
+
+</h5>
+<h5>
+Multipliers (2)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplier_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18x18-bit Multiplier 							: 2
+</span>
+<span name="Multiplier_3_1" id="Multiplier_3_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:514')" name="code2model" class="code2model">
+Gain3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:536')" name="code2model" class="code2model">
+Gain1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Adders/Subtractors (9)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+3x3-bit Adder 							: 1
+</span>
+<span name="Adder_3_1" id="Adder_3_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:84')" name="code2model" class="code2model">
+ctr_0_5
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+5x5-bit Adder 							: 4
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_3_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+20x20-bit Adder 							: 1
+</span>
+<span name="Adder_3_3" id="Adder_3_3">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:49')" name="code2model" class="code2model">
+Multiply_Add_add
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_3_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18x18-bit Adder 							: 1
+</span>
+<span name="Adder_3_4" id="Adder_3_4">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:45')" name="code2model" class="code2model">
+adder
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+19x19-bit Subtractor 							: 1
+</span>
+<span name="Subtractor_3_1" id="Subtractor_3_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:518')" name="code2model" class="code2model">
+Subtract1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_3_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+23x23-bit Subtractor 							: 1
+</span>
+<span name="Subtractor_3_2" id="Subtractor_3_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:517')" name="code2model" class="code2model">
+Subtract
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (56)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+3-bit Register 							: 2
+</span>
+<span name="Register_3_1" id="Register_3_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:84')" name="code2model" class="code2model">
+ctr_0_5
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+5-bit Register 							: 8
+</span>
+<br /><span style="font-family:monospace">
+7-bit Register 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_3_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit Register 							: 37
+</span>
+<span name="Register_3_4" id="Register_3_4">
+<ul class="SystemdefinedCollapse" id="fddbea59-5718-437d-9806-453906764a92" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:148')" name="code2model" class="code2model">
+HwModeRegister5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:149')" name="code2model" class="code2model">
+HwModeRegister6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:145')" name="code2model" class="code2model">
+HwModeRegister3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:146')" name="code2model" class="code2model">
+HwModeRegister4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:141')" name="code2model" class="code2model">
+HwModeRegister_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:121')" name="code2model" class="code2model">
+Discrete_Time_Integrator_u_sat_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:66')" name="code2model" class="code2model">
+tapped_delay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:115')" name="code2model" class="code2model">
+Discrete_Time_Integrator_u_sat_state_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:34')" name="code2model" class="code2model">
+Discrete_Time_Integrator_reg_bypass
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:73')" name="code2model" class="code2model">
+tapped_delay_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:127')" name="code2model" class="code2model">
+buffSig_state
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:133')" name="code2model" class="code2model">
+buffSig_state_1
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'fddbea59-5718-437d-9806-453906764a92')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_3_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+36-bit Register 							: 4
+</span>
+<span name="Register_3_5" id="Register_3_5">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:147')" name="code2model" class="code2model">
+PipelineRegister2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:144')" name="code2model" class="code2model">
+PipelineRegister1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_3_6')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 3
+</span>
+<span name="Register_3_6" id="Register_3_6">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:142')" name="code2model" class="code2model">
+HwModeRegister1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+RAMs (2)
+</h5>
+<span style="font-family:monospace">
+32x7-bit RAM 							: 1
+</span>
+<br /><span style="font-family:monospace">
+32x36-bit RAM 							: 1
+</span>
+<br /><h5>
+Multiplexers (15)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+3-bit 2-to-1 Multiplexer 							: 1
+</span>
+<span name="Multiplexer_3_1" id="Multiplexer_3_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:84')" name="code2model" class="code2model">
+ctr_0_5
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+5-bit 2-to-1 Multiplexer 							: 4
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit 6-to-1 Multiplexer 							: 1
+</span>
+<span name="Multiplexer_3_3" id="Multiplexer_3_3">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:96')" name="code2model" class="code2model">
+splitcomp_multiport
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit 6-to-1 Multiplexer 							: 3
+</span>
+<span name="Multiplexer_3_4" id="Multiplexer_3_4">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:103')" name="code2model" class="code2model">
+splitcomp_multiport_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:110')" name="code2model" class="code2model">
+splitcomp_multiport_2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:90')" name="code2model" class="code2model">
+splitcomp_multiport_3
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit 2-to-1 Multiplexer 							: 3
+</span>
+<span name="Multiplexer_3_5" id="Multiplexer_3_5">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:122')" name="code2model" class="code2model">
+Discrete_Time_Integrator_u_sat_enb
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:134')" name="code2model" class="code2model">
+buffSig_enb_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_6')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit 10-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_3_6" id="Multiplexer_3_6">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:116')" name="code2model" class="code2model">
+Discrete_Time_Integrator_u_sat_enb_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:128')" name="code2model" class="code2model">
+buffSig_enb
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_7')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit 12-to-1 Multiplexer 							: 1
+</span>
+<span name="Multiplexer_3_7" id="Multiplexer_3_7">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_HDL_pfc_gold_fi:34')" name="code2model" class="code2model">
+Discrete_Time_Integrator_reg_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p>
+</body>
+
+</html>

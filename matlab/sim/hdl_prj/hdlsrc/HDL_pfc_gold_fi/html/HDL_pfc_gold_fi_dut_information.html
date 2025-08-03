@@ -1,0 +1,494 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+High-level DUT Information Report for HDL_pfc_gold_fi
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666">
+<script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<font SIZE="+2" COLOR="#000066">
+Code Interface Report for HDL_pfc_gold_fi
+</font>
+<h3>
+Input ports
+</h3>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<b>Port Name</b>
+</td>
+<td align="center" valign="top" style="border-style: none">
+<b>Datatype</b>
+</td>
+<td align="center" valign="top" style="border-style: none">
+<b>Bits</b>
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+clk
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+reset
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+clk_enable
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:107')" name="code2model" class="code2model">
+UP_L1
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:108')" name="code2model" class="code2model">
+DW_L1
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:109')" name="code2model" class="code2model">
+UP_L2
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:110')" name="code2model" class="code2model">
+DW_L2
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:111')" name="code2model" class="code2model">
+UP_L3
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:112')" name="code2model" class="code2model">
+DW_L3
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+I_load_in
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En8
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:114')" name="code2model" class="code2model">
+va_i
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En8
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:115')" name="code2model" class="code2model">
+vb_i
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En8
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:116')" name="code2model" class="code2model">
+vc_i
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En8
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+
+</table>
+<h3>
+Output ports
+</h3>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<b>Port Name</b>
+</td>
+<td align="center" valign="top" style="border-style: none">
+<b>Datatype</b>
+</td>
+<td align="center" valign="top" style="border-style: none">
+<b>Bits</b>
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+ce_out
+</td>
+<td align="center" valign="top" style="border-style: none">
+boolean
+</td>
+<td align="center" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:337')" name="code2model" class="code2model">
+O_Ia
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:338')" name="code2model" class="code2model">
+O_Ib
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:339')" name="code2model" class="code2model">
+O_Ic
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:340')" name="code2model" class="code2model">
+O_Vc
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:341')" name="code2model" class="code2model">
+O_Vb
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:342')" name="code2model" class="code2model">
+O_Va
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:343')" name="code2model" class="code2model">
+O_Vout
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi:344')" name="code2model" class="code2model">
+O_I_load
+</a>
+
+</td>
+<td align="center" valign="top" style="border-style: none">
+sfix18_En6
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>

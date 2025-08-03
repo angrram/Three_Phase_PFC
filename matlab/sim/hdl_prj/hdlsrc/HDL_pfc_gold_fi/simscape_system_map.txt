@@ -1,0 +1,13 @@
+simscape_system_tc --> simscape_system_tc
+HDL_pfc_gold_fi/simscape_system/FET_CTRL/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+HDL_pfc_gold_fi/simscape_system/FET_CTRL --> FET_CTRL
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixB/dot_product_9 --> dot_product_9
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixB --> hNNewMatrixB
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixA/dot_product_6 --> dot_product_6
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixA --> hNNewMatrixA
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixC/dot_product_7 --> dot_product_7
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixC --> hNNewMatrixC
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixD/dot_product_7 --> dot_product_7_block
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixD --> hNNewMatrixD
+HDL_pfc_gold_fi/simscape_system/HDL Subsystem --> HDL_Subsystem
+HDL_pfc_gold_fi/simscape_system --> simscape_system

@@ -1,0 +1,2 @@
+startup_stm32f767zitx.o: \
+ C:/Users/Angel/Desktop/hil/pfc3ph/stf7/matlab/3ph_pil/STM32CubeIDE/Application/User/Startup/startup_stm32f767zitx.s

@@ -1,0 +1,7 @@
+sine_gen/Subsystem/100kHz/Lookup Table3 --> Lookup_Table3
+sine_gen/Subsystem/100kHz --> alpha100kHz
+sine_gen/Subsystem/200kHz/Lookup Table3 --> Lookup_Table3_block
+sine_gen/Subsystem/200kHz --> alpha200kHz
+sine_gen/Subsystem/50kHz/Lookup Table3 --> Lookup_Table3_block1
+sine_gen/Subsystem/50kHz --> alpha50kHz
+sine_gen/Subsystem --> Subsystem

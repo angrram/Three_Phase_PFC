@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Feb  8 18:26:33 2025
+# Process ID         : 1756
+# Current directory  : C:/Users/Angel/Desktop/hil/ips/MCP_DRIVER/vivado_prj
+# Command line       : vivado.exe -mode batch -notrace -source SPI_DAC_Xilinx_Vivado_run.tcl
+# Log file           : C:/Users/Angel/Desktop/hil/ips/MCP_DRIVER/vivado_prj/vivado.log
+# Journal file       : C:/Users/Angel/Desktop/hil/ips/MCP_DRIVER/vivado_prj\vivado.jou
+# Running On         : AngelPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 265KF
+# CPU Frequency      : 3878 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 20
+# Host memory        : 34042 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 44780 MB
+# Available Virtual  : 20543 MB
+#-----------------------------------------------------------
+source SPI_DAC_Xilinx_Vivado_run.tcl -notrace
+### Open existing Xilinx Vivado 2024.2 project <a href="matlab:downstream.handle('Model','int2bin_sdi').openTargetTool;">C:\Users\Angel\Desktop\hil\ips\MCP_DRIVER\vivado_prj\SPI_DAC_vivado.xpr</a>
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Angel/Desktop/hil/ips/MCP_DRIVER/vivado_prj/SPI_DAC_vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+### Set Xilinx Vivado 2024.2 project properties
+### Update Xilinx Vivado 2024.2 project with HDL source files
+WARNING: [Vivado 12-818] No files matched '*.tcl'
+### Close Xilinx Vivado 2024.2 project.
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  8 18:26:40 2025...

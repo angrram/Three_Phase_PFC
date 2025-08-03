@@ -1,0 +1,2 @@
+C:\ST\STM32CubeCLT_1.17.0\GNU-tools-for-STM32\bin\arm-none-eabi-ar.exe qc libctrl_ez_rtwlib.a CMakeFiles/ctrl_ez_rtwlib.dir/ctrl_ez.c.obj
+C:\ST\STM32CubeCLT_1.17.0\GNU-tools-for-STM32\bin\arm-none-eabi-ranlib.exe libctrl_ez_rtwlib.a

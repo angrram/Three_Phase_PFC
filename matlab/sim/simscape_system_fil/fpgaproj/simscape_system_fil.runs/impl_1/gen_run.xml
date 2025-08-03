@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s25csga225-1" LaunchTime="1746169212">
+  <File Type="ROUTE-PWR" Name="simscape_system_fil_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="simscape_system_fil.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="simscape_system_fil_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="simscape_system_fil_rqa_opted.pb"/>
+  <File Type="REPORTS-TCL" Name="simscape_system_fil_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="simscape_system_fil_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="simscape_system_fil_opt.dcp"/>
+  <File Type="OPT-DRC" Name="simscape_system_fil_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="simscape_system_fil_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="simscape_system_fil.hwdef"/>
+  <File Type="OPT-TIMING" Name="simscape_system_fil_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="simscape_system_fil_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="simscape_system_fil_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="simscape_system_fil_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="simscape_system_fil_placed.dcp"/>
+  <File Type="PLACE-IO" Name="simscape_system_fil_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="simscape_system_fil_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="simscape_system_fil_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="simscape_system_fil_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="simscape_system_fil_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="simscape_system_fil_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="simscape_system_fil_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="simscape_system_fil.bin"/>
+  <File Type="PLACE-TIMING" Name="simscape_system_fil_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="simscape_system_fil_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="simscape_system_fil_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="simscape_system_fil_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="simscape_system_fil.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="simscape_system_fil_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="simscape_system_fil_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="simscape_system_fil_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="simscape_system_fil.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="simscape_system_fil_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="simscape_system_fil_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="simscape_system_fil_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="simscape_system_fil_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="simscape_system_fil_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="simscape_system_fil_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="simscape_system_fil_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="simscape_system_fil_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="simscape_system_fil_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="simscape_system_fil_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="simscape_system_fil_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="simscape_system_fil_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="simscape_system_fil_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="simscape_system_fil_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="simscape_system_fil_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="simscape_system_fil_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="simscape_system_fil_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="simscape_system_fil_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="simscape_system_fil_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="simscape_system_fil_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="simscape_system_fil_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="simscape_system_fil_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="simscape_system_fil_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="simscape_system_fil_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="simscape_system_fil_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="simscape_system_fil_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="simscape_system_fil_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="simscape_system_fil.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="simscape_system_fil_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="simscape_system_fil_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="simscape_system_fil.nky"/>
+  <File Type="BITSTR-BMM" Name="simscape_system_fil_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="simscape_system_fil.mmi"/>
+  <File Type="PDI-FILE" Name="simscape_system_fil.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="simscape_system_fil_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="simscape_system_fil_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="simscape_system_fil.rcfi"/>
+  <File Type="CFI_FILE" Name="simscape_system_fil.cfi"/>
+  <File Type="RNPI_FILE" Name="simscape_system_fil.rnpi"/>
+  <File Type="NPI_FILE" Name="simscape_system_fil.npi"/>
+  <File Type="RBD_FILE" Name="simscape_system_fil.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="simscape_system_fil.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="simscape_system_fil.sysdef"/>
+  <File Type="BG-BGN" Name="simscape_system_fil.bgn"/>
+  <File Type="BG-DRC" Name="simscape_system_fil.drc"/>
+  <File Type="RDI-RDI" Name="simscape_system_fil.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="simscape_system_fil_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="simscape_system_fil_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/FET_CTRL.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/HDL_Subsystem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/ShiftRegisterRAM_Wrapper_generic.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/SimpleDualPortRAM_generic.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_6.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_7_block.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_9.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixB.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/jtag_mac.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/real2uint8.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/simscape_system.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/simscape_system_tc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/simscape_system_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/jtag_mac_fifo_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/mwfil_bus2dut.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/mwfil_chifcore.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/mwfil_chiftop.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/mwfil_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/mwfil_dpscram.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/mwfil_dut2bus.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/mwfil_udfifo.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/simcycle_fifo_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/simscape_system_fil.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/ShiftRegisterRAM_Wrapper_singlebit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/SimpleDualPortRAM_singlebit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../filsrc/simscape_system_fil.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="simscape_system_fil"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="simcycle_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="jtag_mac_fifo"/>
+</GenRun>

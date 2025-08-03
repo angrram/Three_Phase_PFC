@@ -1,0 +1,294 @@
+
+*** Running vivado
+    with args -log design_1_MCP_DRIVER_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_MCP_DRIVER_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon May 12 19:26:44 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_MCP_DRIVER_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/amc/fpga/ip_amc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/ips/comparator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/pfc3ph/ips/sine_gen2/sine_gen'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/ips/MCP_DRIVER'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_MCP_DRIVER_0_0
+Command: synth_design -top design_1_MCP_DRIVER_0_0 -part xc7s25csga225-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21584
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1116.160 ; gain = 464.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_MCP_DRIVER_0_0' [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_MCP_DRIVER_0_0/synth/design_1_MCP_DRIVER_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'SPI_DAC' [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/35b6/hdlsrc/int2bin_sdi/SPI_DAC.v:62]
+INFO: [Synth 8-6157] synthesizing module 'SPI_MNGR' [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/35b6/hdlsrc/int2bin_sdi/SPI_MNGR.v:22]
+INFO: [Synth 8-6157] synthesizing module 'simfcn1' [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/35b6/hdlsrc/int2bin_sdi/simfcn1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'simfcn1' (0#1) [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/35b6/hdlsrc/int2bin_sdi/simfcn1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_MNGR' (0#1) [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/35b6/hdlsrc/int2bin_sdi/SPI_MNGR.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_DAC' (0#1) [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/35b6/hdlsrc/int2bin_sdi/SPI_DAC.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_MCP_DRIVER_0_0' (0#1) [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_MCP_DRIVER_0_0/synth/design_1_MCP_DRIVER_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1366.352 ; gain = 714.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1366.352 ; gain = 714.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1366.352 ; gain = 714.289
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1366.352 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1438.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1438.598 ; gain = 0.043
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1438.598 ; gain = 786.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1438.598 ; gain = 786.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1438.598 ; gain = 786.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1438.598 ; gain = 786.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_8'
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1_1' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_9'
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1_2' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_10'
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1_3' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_11'
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1_4' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_12'
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1_5' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_13'
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1_6' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_14'
+INFO: [Synth 8-223] decloning instance 'inst/u_SPI_MNGR/u_simfcn1_7' (simfcn1) to 'inst/u_SPI_MNGR/u_simfcn1_15'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 21    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	  15 Input   28 Bit        Muxes := 8     
+	  15 Input   27 Bit        Muxes := 8     
+	  15 Input   26 Bit        Muxes := 12    
+	  15 Input   25 Bit        Muxes := 10    
+	  15 Input   24 Bit        Muxes := 12    
+	  15 Input   23 Bit        Muxes := 10    
+	  15 Input   22 Bit        Muxes := 20    
+	  15 Input   21 Bit        Muxes := 18    
+	  15 Input   20 Bit        Muxes := 24    
+	  15 Input   19 Bit        Muxes := 20    
+	  15 Input   18 Bit        Muxes := 24    
+	  15 Input   17 Bit        Muxes := 20    
+	   2 Input   16 Bit        Muxes := 149   
+	  15 Input   16 Bit        Muxes := 24    
+	  15 Input   15 Bit        Muxes := 20    
+	  15 Input   14 Bit        Muxes := 24    
+	  15 Input   13 Bit        Muxes := 20    
+	  15 Input   12 Bit        Muxes := 16    
+	  15 Input   11 Bit        Muxes := 12    
+	  15 Input   10 Bit        Muxes := 20    
+	  15 Input    9 Bit        Muxes := 14    
+	  15 Input    8 Bit        Muxes := 15    
+	  15 Input    7 Bit        Muxes := 10    
+	  15 Input    6 Bit        Muxes := 4     
+	  15 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 219   
+	   5 Input    5 Bit        Muxes := 64    
+	   7 Input    5 Bit        Muxes := 8     
+	   6 Input    5 Bit        Muxes := 8     
+	   4 Input    5 Bit        Muxes := 8     
+	   3 Input    5 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 320   
+	   5 Input    4 Bit        Muxes := 64    
+	   7 Input    4 Bit        Muxes := 8     
+	   6 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 8     
+	   3 Input    4 Bit        Muxes := 10    
+	   2 Input    3 Bit        Muxes := 109   
+	   5 Input    3 Bit        Muxes := 32    
+	   7 Input    3 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 55    
+	   5 Input    2 Bit        Muxes := 16    
+	   7 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 976   
+	  15 Input    1 Bit        Muxes := 86    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1512.465 ; gain = 860.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1512.465 ; gain = 860.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1512.465 ; gain = 860.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1520.613 ; gain = 868.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    12|
+|2     |LUT2   |    97|
+|3     |LUT3   |    51|
+|4     |LUT4   |    58|
+|5     |LUT5   |    58|
+|6     |LUT6   |   229|
+|7     |MUXF7  |     1|
+|8     |FDRE   |   284|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1690.012 ; gain = 965.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1690.012 ; gain = 1037.949
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1699.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1702.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6eba4106
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1702.844 ; gain = 1202.371
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1702.844 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/design_1_MCP_DRIVER_0_0_synth_1/design_1_MCP_DRIVER_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_MCP_DRIVER_0_0, cache-ID = 3bbb7c6beff76ee7
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1702.844 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/design_1_MCP_DRIVER_0_0_synth_1/design_1_MCP_DRIVER_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_MCP_DRIVER_0_0_utilization_synth.rpt -pb design_1_MCP_DRIVER_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 19:27:23 2025...

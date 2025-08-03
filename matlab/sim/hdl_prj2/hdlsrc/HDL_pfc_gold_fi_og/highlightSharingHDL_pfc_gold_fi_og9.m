@@ -1,0 +1,11 @@
+open_system('gm_HDL_pfc_gold_fi_og');
+open_system('HDL_pfc_gold_fi_og');
+clearhighlighting;
+cs.HiliteType = 'user3';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'blue';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_HDL_pfc_gold_fi_og/simscape_system/simscape_system/HDL Subsystem/Sparse Matrix-Vector Product2/hNNewMatrixC_shared/dot_product_7', 'user3');
+annotate_port('gm_HDL_pfc_gold_fi_og/simscape_system/simscape_system/HDL Subsystem/Sparse Matrix-Vector Product2/hNNewMatrixC_shared/dot_product_7', 0, 1, 'Sharing Group 3');
+hilite_system('HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space', 'user3');
+annotate_port('HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space', 0, 1, 'Sharing Group 3');

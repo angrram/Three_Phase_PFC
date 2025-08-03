@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec 30 15:31:47 2024
+# Process ID: 12852
+# Current directory: C:/Users/angro/Desktop/hil/ips/dac_mcp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15036 C:\Users\angro\Desktop\hil\ips\dac_mcp\tmp_edit_project.xpr
+# Log file: C:/Users/angro/Desktop/hil/ips/dac_mcp/vivado.log
+# Journal file: C:/Users/angro/Desktop/hil/ips/dac_mcp\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :25598 MB
+# Total Virtual     :34033 MB
+# Available Virtual :16867 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/angro/Desktop/hil/ips/dac_mcp/tmp_edit_project.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/dispatcher.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/in2bin.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/int2bin.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/inttobin.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/model_int2bin_sdi.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/model_int2bin_sdi_tc.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/sdi.v] -no_script -reset -force -quiet
+remove_files  {C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/dispatcher.v C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/in2bin.v C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/int2bin.v C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/inttobin.v C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/model_int2bin_sdi.v C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/model_int2bin_sdi_tc.v C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/src/hdlsrc/sdi.v}
+add_files -norecurse {C:/Users/angro/Desktop/hil/ips/dac_mcp/SPI_MNGR.v C:/Users/angro/Desktop/hil/ips/dac_mcp/SPI_DAC.v}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SPI_DAC [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/component.xml] -no_script -reset -force -quiet
+remove_files  C:/../Users/angro/Desktop/hil/dac/dac_ip/ip04/component.xml

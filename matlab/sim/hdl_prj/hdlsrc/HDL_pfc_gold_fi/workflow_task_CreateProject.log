@@ -1,0 +1,26 @@
+Task "Create Project" successful.
+Generated logfile: 
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Dec 27 09:24:24 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source simscape_system_Xilinx_Vivado_run.tcl -notrace
+### Open existing Xilinx Vivado 2024.1 project <a href="matlab:downstream.handle('Model','HDL_pfc_gold_fi').openTargetTool;">hdl_prj\vivado_prj\simscape_system_vivado.xpr</a>
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/vivado_prj/simscape_system_vivado.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7_block1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7_block2.v'.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 485.758 ; gain = 201.922
+### Set Xilinx Vivado 2024.1 project properties
+### Update Xilinx Vivado 2024.1 project with HDL source files
+WARNING: [Vivado 12-818] No files matched '*.tcl'
+### Close Xilinx Vivado 2024.1 project.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 27 09:24:46 2024...
+
+Elapsed time is 26.5164 seconds.

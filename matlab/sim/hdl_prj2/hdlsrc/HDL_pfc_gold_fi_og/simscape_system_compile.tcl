@@ -1,0 +1,17 @@
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/simscape_system_tc.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/SimpleDualPortRAM_generic.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/ShiftRegisterRAM_Wrapper_generic.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/SimpleDualPortRAM_singlebit.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/ShiftRegisterRAM_Wrapper_singlebit.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/FET_CTRL.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_9.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixB.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_6.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixA.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_7.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixC.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_7_block.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixD.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/HDL_Subsystem.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/real2uint8.v
+add_files -fileset sim_1 -norecurse C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/simscape_system.v

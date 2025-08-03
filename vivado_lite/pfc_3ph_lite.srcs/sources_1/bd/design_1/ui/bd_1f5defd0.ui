@@ -1,0 +1,115 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.890465",
+   "Default View_TopLeft":"979,101",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedPorts":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_va -pg 1 -lvl 7 -x 2080 -y 1090 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_en -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace port port-id_vb -pg 1 -lvl 7 -x 2080 -y 1250 -defaultsOSRD
+preplace port port-id_vc -pg 1 -lvl 7 -x 2080 -y 930 -defaultsOSRD
+preplace port port-id_SDI -pg 1 -lvl 7 -x 2080 -y 800 -defaultsOSRD
+preplace port port-id_SCK -pg 1 -lvl 7 -x 2080 -y 820 -defaultsOSRD
+preplace port port-id_nCS1 -pg 1 -lvl 7 -x 2080 -y 150 -defaultsOSRD
+preplace port port-id_nCS2 -pg 1 -lvl 7 -x 2080 -y 840 -defaultsOSRD
+preplace port port-id_nCS3 -pg 1 -lvl 7 -x 2080 -y 170 -defaultsOSRD
+preplace port port-id_UP_L1_0 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_DW_L1_0 -pg 1 -lvl 0 -x 0 -y 710 -defaultsOSRD
+preplace port port-id_UP_L2_0 -pg 1 -lvl 0 -x 0 -y 1030 -defaultsOSRD
+preplace port port-id_DW_L2_0 -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace port port-id_UP_L3_0 -pg 1 -lvl 0 -x 0 -y 1190 -defaultsOSRD
+preplace port port-id_DW_L3_0 -pg 1 -lvl 0 -x 0 -y 1350 -defaultsOSRD
+preplace port port-id_en_gd -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port port-id_nCS4 -pg 1 -lvl 7 -x 2080 -y 190 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 110 -y 200 -defaultsOSRD
+preplace inst rst_clk_wiz_1_6M1 -pg 1 -lvl 3 -x 790 -y 140 -defaultsOSRD
+preplace inst amc_simulator_0 -pg 1 -lvl 6 -x 1910 -y 1080 -defaultsOSRD
+preplace inst MCP_DRIVER_0 -pg 1 -lvl 5 -x 1520 -y 410 -defaultsOSRD
+preplace inst amc_simulator_1 -pg 1 -lvl 6 -x 1910 -y 1240 -defaultsOSRD -resize 160 136
+preplace inst amc_simulator_2 -pg 1 -lvl 6 -x 1910 -y 920 -defaultsOSRD -resize 160 136
+preplace inst sine_3ph_0 -pg 1 -lvl 3 -x 790 -y 580 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 3 -x 790 -y 370 -defaultsOSRD
+preplace inst rst_clk_wiz_1_6M2 -pg 1 -lvl 2 -x 400 -y 110 -defaultsOSRD -resize 300 156
+preplace inst c_addsub_0 -pg 1 -lvl 2 -x 400 -y 310 -defaultsOSRD
+preplace inst cero_0 -pg 1 -lvl 1 -x 110 -y 340 -defaultsOSRD
+preplace inst c_addsub_1 -pg 1 -lvl 3 -x 790 -y 740 -defaultsOSRD -resize 140 136
+preplace inst c_addsub_2 -pg 1 -lvl 3 -x 790 -y 1060 -defaultsOSRD -resize 140 136
+preplace inst c_addsub_3 -pg 1 -lvl 3 -x 790 -y 900 -defaultsOSRD -resize 140 136
+preplace inst c_addsub_4 -pg 1 -lvl 3 -x 790 -y 1220 -defaultsOSRD -resize 140 136
+preplace inst c_addsub_5 -pg 1 -lvl 3 -x 790 -y 1380 -defaultsOSRD -resize 140 136
+preplace inst ila_0 -pg 1 -lvl 6 -x 1910 -y 500 -defaultsOSRD
+preplace inst PFC_Van_3ph_0 -pg 1 -lvl 4 -x 1190 -y 530 -defaultsOSRD
+preplace netloc DW_L1_0_1 1 0 3 NJ 710 NJ 710 NJ
+preplace netloc DW_L2_0_1 1 0 3 NJ 870 NJ 870 NJ
+preplace netloc DW_L3_0_1 1 0 3 NJ 1350 NJ 1350 NJ
+preplace netloc MCP_DRIVER_0_SCK 1 5 2 1810 170 2020J
+preplace netloc MCP_DRIVER_0_SDI 1 5 2 1800 150 2040J
+preplace netloc MCP_DRIVER_0_debug_0 1 5 1 N 330
+preplace netloc MCP_DRIVER_0_debug_1 1 5 1 N 350
+preplace netloc MCP_DRIVER_0_debug_2 1 5 1 N 370
+preplace netloc MCP_DRIVER_0_debug_3 1 5 1 N 390
+preplace netloc MCP_DRIVER_0_debug_4 1 5 1 N 410
+preplace netloc MCP_DRIVER_0_debug_5 1 5 1 N 430
+preplace netloc MCP_DRIVER_0_debug_6 1 5 1 N 450
+preplace netloc MCP_DRIVER_0_debug_7 1 5 1 N 470
+preplace netloc MCP_DRIVER_0_debug_8 1 5 1 N 490
+preplace netloc MCP_DRIVER_0_debug_9 1 5 1 N 510
+preplace netloc MCP_DRIVER_0_debug_10 1 5 1 N 530
+preplace netloc MCP_DRIVER_0_debug_11 1 5 1 N 550
+preplace netloc MCP_DRIVER_0_debug_12 1 5 1 1750 570n
+preplace netloc MCP_DRIVER_0_debug_13 1 5 1 1730 590n
+preplace netloc MCP_DRIVER_0_debug_14 1 5 1 1690 610n
+preplace netloc MCP_DRIVER_0_debug_15 1 5 1 1670 630n
+preplace netloc MCP_DRIVER_0_nCS1 1 5 2 1700 160 2050J
+preplace netloc MCP_DRIVER_0_nCS2 1 5 2 1770 190 2010J
+preplace netloc MCP_DRIVER_0_nCS3 1 5 2 1720 140 2060J
+preplace netloc MCP_DRIVER_0_nCS4 1 5 2 1760 180 2030J
+preplace netloc PFC3PH_0_O_Ia 1 2 4 620 240 NJ 240 1380 100 1790
+preplace netloc PFC3PH_0_O_Ib 1 4 2 1360 690 1740
+preplace netloc PFC3PH_0_O_Ic 1 4 2 1390 110 1780
+preplace netloc PFC3PH_0_O_Vout 1 2 3 620 480 990J 710 1330
+preplace netloc PFC_Van_3ph_0_O_Va 1 4 1 1320 370n
+preplace netloc PFC_Van_3ph_0_O_Vb 1 4 1 1340 390n
+preplace netloc PFC_Van_3ph_0_O_Vc 1 4 1 1350 410n
+preplace netloc PFC_Van_3ph_0_O_Vout 1 4 1 1410 430n
+preplace netloc UP_L1_0_1 1 0 3 NJ 280 220 400 NJ
+preplace netloc UP_L2_0_1 1 0 3 NJ 1030 NJ 1030 NJ
+preplace netloc UP_L3_0_1 1 0 3 NJ 1190 NJ 1190 NJ
+preplace netloc amc_simulator_0_pwm 1 6 1 NJ 1090
+preplace netloc amc_simulator_1_pwm 1 6 1 NJ 1250
+preplace netloc amc_simulator_2_pwm 1 6 1 NJ 930
+preplace netloc c_addsub_0_S 1 2 2 610 260 1040
+preplace netloc c_addsub_1_S 1 3 1 1000 490n
+preplace netloc c_addsub_2_S 1 3 1 1010 510n
+preplace netloc c_addsub_3_S 1 3 1 1020 530n
+preplace netloc c_addsub_4_S 1 3 1 1050 550n
+preplace netloc c_addsub_5_S 1 3 1 1060 570n
+preplace netloc cero_0_dout 1 1 2 200 730 580
+preplace netloc clk_enable_0_1 1 0 6 NJ 490 NJ 490 620 490 970 720 1370 720 1630
+preplace netloc clk_wiz_clk_out1 1 1 5 220 210 600 250 1050 250 1400 120 1710
+preplace netloc clk_wiz_clk_out2 1 1 2 230 560 590
+preplace netloc clk_wiz_locked 1 1 2 200 220 580J
+preplace netloc en_gd_1 1 0 3 NJ 400 210 420 610
+preplace netloc reset_1 1 0 3 20 90 200 10 580
+preplace netloc rst_clk_wiz_1_6M1_peripheral_reset 1 3 3 1060 140 1410 130 1680
+preplace netloc rst_clk_wiz_1_6M2_peripheral_reset 1 2 1 570 110n
+preplace netloc sine_3ph_0_alphaout_va 1 3 1 N 610
+preplace netloc sine_3ph_0_out_vb 1 3 1 960 590n
+preplace netloc sine_3ph_0_out_vc 1 3 1 980 570n
+preplace netloc sys_clock_1 1 0 1 NJ 210
+preplace netloc vio_0_probe_out0 1 3 1 1030 370n
+preplace netloc PFC_Van_3ph_0_O_Ia1 1 4 2 1350J 710 1660
+preplace netloc PFC_Van_3ph_0_O_Ib1 1 4 2 1340J 700 1640
+preplace netloc PFC_Van_3ph_0_O_Ic1 1 4 2 1320J 730 1650
+levelinfo -pg 1 0 110 400 790 1190 1520 1910 2080
+pagesize -pg 1 -db -bbox -sgen -120 0 2170 1470
+"
+}
+{
+   "da_board_cnt":"18",
+   "da_clkrst_cnt":"48"
+}

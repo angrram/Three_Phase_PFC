@@ -1,0 +1,1115 @@
+Task "Run Synthesis" successful.
+Generated logfile: 
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Dec 27 09:24:53 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source simscape_system_Xilinx_Vivado_run.tcl -notrace
+### Open existing Xilinx Vivado 2024.1 project hdl_prj\vivado_prj\simscape_system_vivado.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/vivado_prj/simscape_system_vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 484.305 ; gain = 200.000
+### Running Synthesis in Xilinx Vivado 2024.1 ...
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Fri Dec 27 09:25:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/vivado_prj/simscape_system_vivado.runs/synth_1/runme.log
+[Fri Dec 27 09:25:05 2024] Waiting for synth_1 to finish...
+
+
+*** Running vivado
+    with args -log simscape_system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source simscape_system.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Dec 27 09:25:08 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source simscape_system.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 485.648 ; gain = 201.336
+Command: synth_design -top simscape_system -part xc7s25csga225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Device 21-9227] Part: xc7s25csga225-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1764
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1316.668 ; gain = 446.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'simscape_system' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/simscape_system.v:49]
+INFO: [Synth 8-6157] synthesizing module 'simscape_system_tc' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/simscape_system_tc.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'simscape_system_tc' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/simscape_system_tc.v:27]
+INFO: [Synth 8-6157] synthesizing module 'FET_CTRL' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/FET_CTRL.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 5 - type: integer 
+	Parameter DataWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized0' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 5 - type: integer 
+	Parameter DataWidth bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized0' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FET_CTRL' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/FET_CTRL.v:22]
+INFO: [Synth 8-6157] synthesizing module 'HDL_Subsystem' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/HDL_Subsystem.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized1' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 72 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized1' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hNNewMatrixD' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixD.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized2' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized2' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dot_product_7_block' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized3' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 125 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized3' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized4' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 50 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized4' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dot_product_7_block' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hNNewMatrixD' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixD.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hNNewMatrixB' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixB.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dot_product_9' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_9.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized5' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized5' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dot_product_9' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_9.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hNNewMatrixB' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixB.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hNNewMatrixA' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixA.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dot_product_6' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_6.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized6' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized6' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dot_product_6' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_6.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hNNewMatrixA' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixA.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hNNewMatrixC' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dot_product_7' [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dot_product_7' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hNNewMatrixC' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixC.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'HDL_Subsystem' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/HDL_Subsystem.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'simscape_system' (0#1) [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/simscape_system.v:49]
+WARNING: [Synth 8-6014] Unused sequential element counterSig_1_reg was removed.  [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixC.v:765]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1461.965 ; gain = 592.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1461.965 ; gain = 592.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1461.965 ; gain = 592.156
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1461.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/clock_constraint.xdc]
+Finished Parsing XDC File [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/clock_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1570.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1572.371 ; gain = 2.262
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1572.371 ; gain = 702.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1572.371 ; gain = 702.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1572.371 ; gain = 702.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1572.371 ; gain = 702.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input   50 Bit       Adders := 2     
+	   9 Input   50 Bit       Adders := 1     
+	   6 Input   50 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 75    
+	   2 Input   18 Bit       Adders := 2     
+	   3 Input   18 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 13    
+	   2 Input    2 Bit       Adders := 14    
++---Registers : 
+	              125 Bit    Registers := 8     
+	              100 Bit    Registers := 2     
+	               72 Bit    Registers := 3     
+	               50 Bit    Registers := 58    
+	               48 Bit    Registers := 29    
+	               36 Bit    Registers := 3     
+	               25 Bit    Registers := 50    
+	               18 Bit    Registers := 74    
+	                8 Bit    Registers := 29    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 11    
+	                3 Bit    Registers := 34    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               1K Bit	(32 X 36 bit)          RAMs := 1     
+	             1000 Bit	(8 X 125 bit)          RAMs := 4     
+	              800 Bit	(8 X 100 bit)          RAMs := 1     
+	              576 Bit	(8 X 72 bit)          RAMs := 1     
+	              400 Bit	(8 X 50 bit)          RAMs := 2     
+	              224 Bit	(32 X 7 bit)          RAMs := 1     
+	              200 Bit	(8 X 25 bit)          RAMs := 1     
+	               40 Bit	(8 X 5 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   50 Bit        Muxes := 13    
+	   2 Input   25 Bit        Muxes := 38    
+	  15 Input   25 Bit        Muxes := 3     
+	  13 Input   25 Bit        Muxes := 1     
+	   4 Input   25 Bit        Muxes := 2     
+	   7 Input   25 Bit        Muxes := 6     
+	   6 Input   25 Bit        Muxes := 4     
+	   5 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 8     
+	  16 Input   24 Bit        Muxes := 1     
+	   4 Input   24 Bit        Muxes := 4     
+	  15 Input   24 Bit        Muxes := 1     
+	   7 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 6     
+	   6 Input   23 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 6     
+	   2 Input   21 Bit        Muxes := 3     
+	   2 Input   19 Bit        Muxes := 3     
+	   3 Input   18 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 45    
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 11    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 49    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_out1[5], operation Mode is: A2*B2.
+DSP Report: register mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: register mul_in2_1_reg[5] is absorbed into DSP mul_out1[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: Generating DSP mul_out1_1_reg[5], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: register mul_in2_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: register mul_out1_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: Generating DSP mul_out1[6], operation Mode is: A2*B2.
+DSP Report: register mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: register mul_in2_1_reg[6] is absorbed into DSP mul_out1[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: Generating DSP mul_out1_1_reg[6], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mergedOutput_1_reg is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: register mul_in2_1_reg[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: register mul_out1_1_reg[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: Generating DSP mul_out1[3], operation Mode is: A2*B2.
+DSP Report: register mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: register mul_in2_1_reg[3] is absorbed into DSP mul_out1[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: Generating DSP mul_out1_1_reg[3], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: register mul_in2_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: register mul_out1_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: Generating DSP mul_out1[1], operation Mode is: A2*B2.
+DSP Report: register mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: register mul_in2_1_reg[1] is absorbed into DSP mul_out1[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: Generating DSP mul_out1_1_reg[1], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: register mul_in2_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: register mul_out1_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: Generating DSP mul_out1[2], operation Mode is: A2*B2.
+DSP Report: register mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: register mul_in2_1_reg[2] is absorbed into DSP mul_out1[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: Generating DSP mul_out1_1_reg[2], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: register mul_in2_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: register mul_out1_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: Generating DSP mul_out1[4], operation Mode is: A2*B2.
+DSP Report: register mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: register mul_in2_1_reg[4] is absorbed into DSP mul_out1[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: Generating DSP mul_out1_1_reg[4], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mergedOutput_reg is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: register mul_in2_1_reg[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: register mul_out1_1_reg[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: Generating DSP mul_out1[0], operation Mode is: A2*B2.
+DSP Report: register mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: register mul_in2_1_reg[0] is absorbed into DSP mul_out1[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: Generating DSP mul_out1_1_reg[0], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: register mul_in2_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: register mul_out1_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: Generating DSP mul_out1[7], operation Mode is: A2*B2.
+DSP Report: register mul_out1[7] is absorbed into DSP mul_out1[7].
+DSP Report: register mul_in2_1_reg[7] is absorbed into DSP mul_out1[7].
+DSP Report: operator mul_out1[7] is absorbed into DSP mul_out1[7].
+DSP Report: operator mul_out1[7] is absorbed into DSP mul_out1[7].
+DSP Report: Generating DSP mul_out1_1_reg[7], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[7] is absorbed into DSP mul_out1_1_reg[7].
+DSP Report: register mul_in2_1_reg[7] is absorbed into DSP mul_out1_1_reg[7].
+DSP Report: register mul_out1_1_reg[7] is absorbed into DSP mul_out1_1_reg[7].
+DSP Report: operator mul_out1[7] is absorbed into DSP mul_out1_1_reg[7].
+DSP Report: operator mul_out1[7] is absorbed into DSP mul_out1_1_reg[7].
+DSP Report: Generating DSP mul_out1[5], operation Mode is: A2*B2.
+DSP Report: register mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: register mul_in2_1_reg[5] is absorbed into DSP mul_out1[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: Generating DSP mul_out1_1_reg[5], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: register mul_in2_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: register mul_out1_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: Generating DSP mul_out1[6], operation Mode is: A2*B2.
+DSP Report: register mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: register mul_in2_1_reg[6] is absorbed into DSP mul_out1[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: Generating DSP mul_out1_1_reg[6], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: register mul_in2_1_reg[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: register mul_out1_1_reg[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: Generating DSP mul_out1[3], operation Mode is: A2*B2.
+DSP Report: register mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: register mul_in2_1_reg[3] is absorbed into DSP mul_out1[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: Generating DSP mul_out1_1_reg[3], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: register mul_in2_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: register mul_out1_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: Generating DSP mul_out1[1], operation Mode is: A2*B2.
+DSP Report: register mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: register mul_in2_1_reg[1] is absorbed into DSP mul_out1[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: Generating DSP mul_out1_1_reg[1], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: register mul_in2_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: register mul_out1_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: Generating DSP mul_out1[2], operation Mode is: A2*B2.
+DSP Report: register mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: register mul_in2_1_reg[2] is absorbed into DSP mul_out1[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: Generating DSP mul_out1_1_reg[2], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: register mul_in2_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: register mul_out1_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: Generating DSP mul_out1[4], operation Mode is: A2*B2.
+DSP Report: register mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: register mul_in2_1_reg[4] is absorbed into DSP mul_out1[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: Generating DSP mul_out1_1_reg[4], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mergedOutput_reg is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: register mul_in2_1_reg[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: register mul_out1_1_reg[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: Generating DSP mul_out1[8], operation Mode is: A2*B2.
+DSP Report: register mul_out1[8] is absorbed into DSP mul_out1[8].
+DSP Report: register mul_in2_1_reg[8] is absorbed into DSP mul_out1[8].
+DSP Report: operator mul_out1[8] is absorbed into DSP mul_out1[8].
+DSP Report: operator mul_out1[8] is absorbed into DSP mul_out1[8].
+DSP Report: Generating DSP mul_out1_1_reg[8], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mergedOutput_1_reg is absorbed into DSP mul_out1_1_reg[8].
+DSP Report: register mul_in2_1_reg[8] is absorbed into DSP mul_out1_1_reg[8].
+DSP Report: register mul_out1_1_reg[8] is absorbed into DSP mul_out1_1_reg[8].
+DSP Report: operator mul_out1[8] is absorbed into DSP mul_out1_1_reg[8].
+DSP Report: operator mul_out1[8] is absorbed into DSP mul_out1_1_reg[8].
+DSP Report: Generating DSP mul_out1[0], operation Mode is: A2*B2.
+DSP Report: register mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: register mul_in2_1_reg[0] is absorbed into DSP mul_out1[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: Generating DSP mul_out1_1_reg[0], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: register mul_in2_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: register mul_out1_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: Generating DSP u_dot_product_6/mul_out1[5], operation Mode is: A2*B2.
+DSP Report: register u_dot_product_6/mul_out1[5] is absorbed into DSP u_dot_product_6/mul_out1[5].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[5] is absorbed into DSP u_dot_product_6/mul_out1[5].
+DSP Report: operator u_dot_product_6/mul_out1[5] is absorbed into DSP u_dot_product_6/mul_out1[5].
+DSP Report: operator u_dot_product_6/mul_out1[5] is absorbed into DSP u_dot_product_6/mul_out1[5].
+DSP Report: Generating DSP u_dot_product_6/mul_out1_1_reg[5], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register u_dot_product_6/delayOut5_reg is absorbed into DSP u_dot_product_6/mul_out1_1_reg[5].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[5] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[5].
+DSP Report: register u_dot_product_6/mul_out1_1_reg[5] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[5].
+DSP Report: operator u_dot_product_6/mul_out1[5] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[5].
+DSP Report: operator u_dot_product_6/mul_out1[5] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[5].
+DSP Report: Generating DSP u_dot_product_6/mul_out1[3], operation Mode is: A2*B2.
+DSP Report: register u_dot_product_6/mul_out1[3] is absorbed into DSP u_dot_product_6/mul_out1[3].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[3] is absorbed into DSP u_dot_product_6/mul_out1[3].
+DSP Report: operator u_dot_product_6/mul_out1[3] is absorbed into DSP u_dot_product_6/mul_out1[3].
+DSP Report: operator u_dot_product_6/mul_out1[3] is absorbed into DSP u_dot_product_6/mul_out1[3].
+DSP Report: Generating DSP u_dot_product_6/mul_out1_1_reg[3], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register u_dot_product_6/mul_out1_1_reg[3] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[3].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[3] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[3].
+DSP Report: register u_dot_product_6/mul_out1_1_reg[3] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[3].
+DSP Report: operator u_dot_product_6/mul_out1[3] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[3].
+DSP Report: operator u_dot_product_6/mul_out1[3] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[3].
+DSP Report: Generating DSP u_dot_product_6/mul_out1[1], operation Mode is: A2*B2.
+DSP Report: register u_dot_product_6/mul_out1[1] is absorbed into DSP u_dot_product_6/mul_out1[1].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[1] is absorbed into DSP u_dot_product_6/mul_out1[1].
+DSP Report: operator u_dot_product_6/mul_out1[1] is absorbed into DSP u_dot_product_6/mul_out1[1].
+DSP Report: operator u_dot_product_6/mul_out1[1] is absorbed into DSP u_dot_product_6/mul_out1[1].
+DSP Report: Generating DSP u_dot_product_6/mul_out1_1_reg[1], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register u_dot_product_6/mul_out1_1_reg[1] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[1].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[1] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[1].
+DSP Report: register u_dot_product_6/mul_out1_1_reg[1] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[1].
+DSP Report: operator u_dot_product_6/mul_out1[1] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[1].
+DSP Report: operator u_dot_product_6/mul_out1[1] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[1].
+DSP Report: Generating DSP u_dot_product_6/mul_out1[2], operation Mode is: A2*B2.
+DSP Report: register u_dot_product_6/mul_out1[2] is absorbed into DSP u_dot_product_6/mul_out1[2].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[2] is absorbed into DSP u_dot_product_6/mul_out1[2].
+DSP Report: operator u_dot_product_6/mul_out1[2] is absorbed into DSP u_dot_product_6/mul_out1[2].
+DSP Report: operator u_dot_product_6/mul_out1[2] is absorbed into DSP u_dot_product_6/mul_out1[2].
+DSP Report: Generating DSP u_dot_product_6/mul_out1_1_reg[2], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register u_dot_product_6/mul_out1_1_reg[2] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[2].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[2] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[2].
+DSP Report: register u_dot_product_6/mul_out1_1_reg[2] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[2].
+DSP Report: operator u_dot_product_6/mul_out1[2] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[2].
+DSP Report: operator u_dot_product_6/mul_out1[2] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[2].
+DSP Report: Generating DSP u_dot_product_6/mul_out1[4], operation Mode is: A2*B2.
+DSP Report: register u_dot_product_6/mul_out1[4] is absorbed into DSP u_dot_product_6/mul_out1[4].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[4] is absorbed into DSP u_dot_product_6/mul_out1[4].
+DSP Report: operator u_dot_product_6/mul_out1[4] is absorbed into DSP u_dot_product_6/mul_out1[4].
+DSP Report: operator u_dot_product_6/mul_out1[4] is absorbed into DSP u_dot_product_6/mul_out1[4].
+DSP Report: Generating DSP u_dot_product_6/mul_out1_1_reg[4], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register u_dot_product_6/mergedOutput_reg is absorbed into DSP u_dot_product_6/mul_out1_1_reg[4].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[4] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[4].
+DSP Report: register u_dot_product_6/mul_out1_1_reg[4] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[4].
+DSP Report: operator u_dot_product_6/mul_out1[4] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[4].
+DSP Report: operator u_dot_product_6/mul_out1[4] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[4].
+DSP Report: Generating DSP u_dot_product_6/mul_out1[0], operation Mode is: A2*B2.
+DSP Report: register u_dot_product_6/mul_out1[0] is absorbed into DSP u_dot_product_6/mul_out1[0].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[0] is absorbed into DSP u_dot_product_6/mul_out1[0].
+DSP Report: operator u_dot_product_6/mul_out1[0] is absorbed into DSP u_dot_product_6/mul_out1[0].
+DSP Report: operator u_dot_product_6/mul_out1[0] is absorbed into DSP u_dot_product_6/mul_out1[0].
+DSP Report: Generating DSP u_dot_product_6/mul_out1_1_reg[0], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register u_dot_product_6/mul_out1_1_reg[0] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[0].
+DSP Report: register u_dot_product_6/mul_in2_1_reg[0] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[0].
+DSP Report: register u_dot_product_6/mul_out1_1_reg[0] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[0].
+DSP Report: operator u_dot_product_6/mul_out1[0] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[0].
+DSP Report: operator u_dot_product_6/mul_out1[0] is absorbed into DSP u_dot_product_6/mul_out1_1_reg[0].
+DSP Report: Generating DSP mul_out1[5], operation Mode is: A2*B2.
+DSP Report: register mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: register mul_in2_1_reg[5] is absorbed into DSP mul_out1[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1[5].
+DSP Report: Generating DSP mul_out1_1_reg[5], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: register mul_in2_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: register mul_out1_1_reg[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: operator mul_out1[5] is absorbed into DSP mul_out1_1_reg[5].
+DSP Report: Generating DSP mul_out1[6], operation Mode is: A2*B2.
+DSP Report: register mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: register mul_in2_1_reg[6] is absorbed into DSP mul_out1[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1[6].
+DSP Report: Generating DSP mul_out1_1_reg[6], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mergedOutput_1_reg is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: register mul_in2_1_reg[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: register mul_out1_1_reg[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: operator mul_out1[6] is absorbed into DSP mul_out1_1_reg[6].
+DSP Report: Generating DSP mul_out1[3], operation Mode is: A2*B2.
+DSP Report: register mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: register mul_in2_1_reg[3] is absorbed into DSP mul_out1[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1[3].
+DSP Report: Generating DSP mul_out1_1_reg[3], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: register mul_in2_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: register mul_out1_1_reg[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: operator mul_out1[3] is absorbed into DSP mul_out1_1_reg[3].
+DSP Report: Generating DSP mul_out1[1], operation Mode is: A2*B2.
+DSP Report: register mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: register mul_in2_1_reg[1] is absorbed into DSP mul_out1[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1[1].
+DSP Report: Generating DSP mul_out1_1_reg[1], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: register mul_in2_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: register mul_out1_1_reg[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: operator mul_out1[1] is absorbed into DSP mul_out1_1_reg[1].
+DSP Report: Generating DSP mul_out1[2], operation Mode is: A2*B2.
+DSP Report: register mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: register mul_in2_1_reg[2] is absorbed into DSP mul_out1[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1[2].
+DSP Report: Generating DSP mul_out1_1_reg[2], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: register mul_in2_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: register mul_out1_1_reg[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: operator mul_out1[2] is absorbed into DSP mul_out1_1_reg[2].
+DSP Report: Generating DSP mul_out1[4], operation Mode is: A2*B2.
+DSP Report: register mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: register mul_in2_1_reg[4] is absorbed into DSP mul_out1[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1[4].
+DSP Report: Generating DSP mul_out1_1_reg[4], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mergedOutput_reg is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: register mul_in2_1_reg[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: register mul_out1_1_reg[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: operator mul_out1[4] is absorbed into DSP mul_out1_1_reg[4].
+DSP Report: Generating DSP mul_out1[0], operation Mode is: A2*B2.
+DSP Report: register mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: register mul_in2_1_reg[0] is absorbed into DSP mul_out1[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1[0].
+DSP Report: Generating DSP mul_out1_1_reg[0], operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_out1_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: register mul_in2_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: register mul_out1_1_reg[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1_1_reg[0].
+DSP Report: operator mul_out1[0] is absorbed into DSP mul_out1_1_reg[0].
+WARNING: [Synth 8-6014] Unused sequential element u_ShiftRegisterRAM/ram_reg was removed. 
+DSP Report: Generating DSP u_FET_CTRL/on_1_reg, operation Mode is: (A2*B)'.
+DSP Report: register u_FET_CTRL/is_unbuffer_1_reg is absorbed into DSP u_FET_CTRL/on_1_reg.
+DSP Report: register u_FET_CTRL/on_1_reg is absorbed into DSP u_FET_CTRL/on_1_reg.
+DSP Report: operator u_FET_CTRL/on is absorbed into DSP u_FET_CTRL/on_1_reg.
+DSP Report: Generating DSP u_FET_CTRL/Gain3_out1_1_reg, operation Mode is: (A2*B)'.
+DSP Report: register u_FET_CTRL/vs_unbuffer_1_reg is absorbed into DSP u_FET_CTRL/Gain3_out1_1_reg.
+DSP Report: register u_FET_CTRL/Gain3_out1_1_reg is absorbed into DSP u_FET_CTRL/Gain3_out1_1_reg.
+DSP Report: operator u_FET_CTRL/Gain3_out1 is absorbed into DSP u_FET_CTRL/Gain3_out1_1_reg.
+DSP Report: Generating DSP u_FET_CTRL/Subtract1_sub_temp, operation Mode is: C-A:B.
+DSP Report: operator u_FET_CTRL/Subtract1_sub_temp is absorbed into DSP u_FET_CTRL/Subtract1_sub_temp.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][47]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][46]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][45]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][44]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][43]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][42]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][41]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][40]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][39]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][38]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][37]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][36]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][35]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][34]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][33]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][32]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][31]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][30]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][29]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][28]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][27]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][26]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][25]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][24]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][23]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][22]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][21]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][20]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][19]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][18]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[5][17]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][47]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][46]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][45]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][44]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][43]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][42]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][41]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][40]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][39]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][38]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][37]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][36]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][35]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][34]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][33]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][32]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][31]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][30]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][29]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][28]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][27]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][26]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][25]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][24]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][23]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][22]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][21]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][20]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][19]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][18]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[6][17]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][47]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][46]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][45]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][44]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][43]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][42]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][41]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][40]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][39]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][38]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][37]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][36]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][35]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][34]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][33]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][32]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][31]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][30]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][29]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][28]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][27]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][26]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][25]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][24]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][23]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][22]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][21]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][20]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][19]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][18]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[3][17]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[1][47]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[1][46]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[1][45]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[1][44]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[1][43]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[1][42]) is unused and will be removed from module hNNewMatrixD.
+WARNING: [Synth 8-3332] Sequential element (u_dot_product_7/mul_out1_1_reg[1][41]) is unused and will be removed from module hNNewMatrixD.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1572.371 ; gain = 702.562
+---------------------------------------------------------------------------------
+ Sort Area is  u_FET_CTRL/Subtract1_sub_temp_22 : 0 0 : 132 132 : Used 1 time 100
+ Sort Area is  mul_out1[0]_0 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[0]_0 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[0]_18 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[0]_18 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[0]_9 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[0]_9 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[1]_1b : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[1]_1b : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[1]_5 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[1]_5 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[1]_d : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[1]_d : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[2]_1a : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[2]_1a : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[2]_4 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[2]_4 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[2]_c : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[2]_c : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[3]_1c : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[3]_1c : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[3]_6 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[3]_6 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[3]_e : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[3]_e : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[4]_19 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[4]_19 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[4]_3 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[4]_3 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[4]_b : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[4]_b : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[5]_10 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[5]_10 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[5]_1e : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[5]_1e : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[5]_8 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[5]_8 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[6]_1d : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[6]_1d : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[6]_7 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[6]_7 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[6]_f : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[6]_f : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[7]_11 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[7]_11 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  mul_out1[8]_a : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  mul_out1[8]_a : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[0]_12 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[0]_12 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[1]_15 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[1]_15 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[2]_14 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[2]_14 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[3]_16 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[3]_16 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[4]_13 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[4]_13 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[5]_17 : 0 0 : 3449 4899 : Used 1 time 0
+ Sort Area is  u_dot_product_6/mul_out1[5]_17 : 0 1 : 1450 4899 : Used 1 time 0
+ Sort Area is  u_FET_CTRL/Gain3_out1_1_reg_1f : 0 0 : 2530 2530 : Used 1 time 0
+ Sort Area is  u_FET_CTRL/on_1_reg_21 : 0 0 : 2530 2530 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|simscape_system | u_FET_CTRL/u_ShiftRegisterRAM/ram_reg | 32 x 36(READ_FIRST)    | W |   | 32 x 36(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------------------------------------+-----------------------------------------------+-----------+----------------------+--------------+
+|Module Name                                     | RTL Object                                    | Inference | Size (Depth x Width) | Primitives   | 
++------------------------------------------------+-----------------------------------------------+-----------+----------------------+--------------+
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product3 | u_dot_product_7/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 4 x 50               | RAM32M x 9   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product3 | u_dot_product_7/u_ShiftRegisterRAM/ram_reg    | Implied   | 4 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product3 | u_ShiftRegisterRAM/ram_reg                    | Implied   | 4 x 5                | RAM32M x 1   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product  | u_dot_product_9/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 4 x 100              | RAM32M x 17  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product  | u_dot_product_9/u_ShiftRegisterRAM/ram_reg    | Implied   | 4 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product1 | u_dot_product_6/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 8 x 25               | RAM32M x 5   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product1 | u_dot_product_6/u_ShiftRegisterRAM/ram_reg    | Implied   | 8 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product2 | u_dot_product_7/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 8 x 50               | RAM32M x 9   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product2 | u_dot_product_7/u_ShiftRegisterRAM/ram_reg    | Implied   | 8 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem                                 | u_ShiftRegisterRAM/ram_reg                    | Implied   | 4 x 72               | RAM32M x 12  | 
+|simscape_system                                 | u_FET_CTRL/u_ShiftRegisterRAM_generic/ram_reg | Implied   | 32 x 7               | RAM32M x 2   | 
++------------------------------------------------+-----------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dot_product_7_block | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hNNewMatrixA        | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hNNewMatrixA        | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A2*B2            | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17)+A2*B2 | 25     | 8      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|FET_CTRL            | (A2*B)'          | 18     | 18     | -      | -      | 36     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|FET_CTRL            | (A2*B)'          | 18     | 18     | -      | -      | 36     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|FET_CTRL            | C-A:B            | 30     | 18     | 18     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++--------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1572.371 ; gain = 702.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1572.371 ; gain = 702.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|simscape_system | u_FET_CTRL/u_ShiftRegisterRAM/ram_reg | 32 x 36(READ_FIRST)    | W |   | 32 x 36(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------------------------------------------+-----------------------------------------------+-----------+----------------------+--------------+
+|Module Name                                     | RTL Object                                    | Inference | Size (Depth x Width) | Primitives   | 
++------------------------------------------------+-----------------------------------------------+-----------+----------------------+--------------+
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product3 | u_dot_product_7/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 4 x 50               | RAM32M x 9   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product3 | u_dot_product_7/u_ShiftRegisterRAM/ram_reg    | Implied   | 4 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product3 | u_ShiftRegisterRAM/ram_reg                    | Implied   | 4 x 5                | RAM32M x 1   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product  | u_dot_product_9/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 4 x 100              | RAM32M x 17  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product  | u_dot_product_9/u_ShiftRegisterRAM/ram_reg    | Implied   | 4 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product1 | u_dot_product_6/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 8 x 25               | RAM32M x 5   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product1 | u_dot_product_6/u_ShiftRegisterRAM/ram_reg    | Implied   | 8 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product2 | u_dot_product_7/u_ShiftRegisterRAM_1/ram_reg  | Implied   | 8 x 50               | RAM32M x 9   | 
+|u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product2 | u_dot_product_7/u_ShiftRegisterRAM/ram_reg    | Implied   | 8 x 125              | RAM32M x 21  | 
+|u_HDL_Subsystem                                 | u_ShiftRegisterRAM/ram_reg                    | Implied   | 4 x 72               | RAM32M x 12  | 
+|simscape_system                                 | u_FET_CTRL/u_ShiftRegisterRAM_generic/ram_reg | Implied   | 32 x 7               | RAM32M x 2   | 
++------------------------------------------------+-----------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1593.586 ; gain = 723.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1607.141 ; gain = 737.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1607.141 ; gain = 737.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1607.141 ; gain = 737.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1607.141 ; gain = 737.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1607.195 ; gain = 737.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1607.195 ; gain = 737.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+--------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                                                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+--------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|simscape_system | u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product/delayMatch_reg_reg[4][2]  | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|simscape_system | u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product/delayMatch_reg_reg[4][0]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|simscape_system | u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product1/delayMatch_reg_reg[5][2] | 5      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|simscape_system | u_HDL_Subsystem/u_Sparse_Matrix_Vector_Product1/delayMatch_reg_reg[5][0] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++----------------+--------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FET_CTRL            | (A'*B')'           | 30     | 18     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|FET_CTRL            | (A'*B')'           | 30     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|FET_CTRL            | (C-(A:B))'         | 30     | 18     | 48     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_9       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_9       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|hNNewMatrixA        | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|hNNewMatrixA        | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_6       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_6       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7       | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7       | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A'*B'              | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A'*B'              | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A'*B'              | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A'*B'              | 30     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A'*B'              | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A'*B'              | 30     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dot_product_7_block | A''*B'             | 30     | 17     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dot_product_7_block | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
++--------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   681|
+|2     |DSP48E1  |    61|
+|8     |LUT1     |     7|
+|9     |LUT2     |   709|
+|10    |LUT3     |  1267|
+|11    |LUT4     |   278|
+|12    |LUT5     |   324|
+|13    |LUT6     |   920|
+|14    |MUXF7    |     6|
+|15    |MUXF8    |     3|
+|16    |RAM32M   |   129|
+|17    |RAM32X1D |     2|
+|18    |RAMB18E1 |     1|
+|19    |SRL16E   |     6|
+|20    |FDRE     |  4949|
+|21    |FDSE     |    14|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1607.195 ; gain = 737.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 905 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:05 . Memory (MB): peak = 1607.195 ; gain = 626.980
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1607.195 ; gain = 737.387
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1616.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 883 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1620.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 131 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 129 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete | Checksum: 7ed4054c
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:27 . Memory (MB): peak = 1620.004 ; gain = 1134.355
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1620.004 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/vivado_prj/simscape_system_vivado.runs/synth_1/simscape_system.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file simscape_system_utilization_synth.rpt -pb simscape_system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 27 09:26:46 2024...
+[Fri Dec 27 09:26:52 2024] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:47 . Memory (MB): peak = 489.500 ; gain = 0.000
+### Synthesis Complete.
+### Running PostMapTiming in Xilinx Vivado 2024.1 ...
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s25csga225-1
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Device 21-9227] Part: xc7s25csga225-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 874.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 883 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/clock_constraint.xdc]
+Finished Parsing XDC File [C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/clock_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1020.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 131 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 129 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1020.574 ; gain = 531.074
+WARNING: [Common 17-708] report_timing_summary: The '-name' option will be ignored because it is only relevant in GUI mode.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1527.465 ; gain = 506.891
+### PostMapTiming Complete.
+### Close Xilinx Vivado 2024.1 project.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 27 09:27:10 2024...
+
+Elapsed time is 139.8068 seconds.

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Dec  8 17:27:25 2024
+# Process ID: 19320
+# Current directory: c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/managed_ip_project/managed_ip_project.tmp/pfc_3ph.runs/synth_1
+# Command line: vivado.exe -log FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA.tcl
+# Log file: c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/managed_ip_project/managed_ip_project.tmp/pfc_3ph.runs/synth_1/FPGA.vds
+# Journal file: c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/managed_ip_project/managed_ip_project.tmp/pfc_3ph.runs/synth_1\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :19327 MB
+# Total Virtual     :27762 MB
+# Available Virtual :6288 MB
+#-----------------------------------------------------------
+source FPGA.tcl -notrace

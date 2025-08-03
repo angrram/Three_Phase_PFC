@@ -1,0 +1,1453 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May 12 20:32:19 2025
+# Process ID         : 24432
+# Current directory  : C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3
+# Command line       : vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file           : C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper.vdi
+# Journal file       : C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3\vivado.jou
+# Running On         : AngelPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 265KF
+# CPU Frequency      : 3878 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 20
+# Host memory        : 34042 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36190 MB
+# Available Virtual  : 6762 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/amc/fpga/ip_amc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/ips/comparator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/pfc3ph/ips/sine_gen2/sine_gen'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Angel/Desktop/hil/ips/MCP_DRIVER'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xc7s25csga225-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_MCP_DRIVER_0_0/design_1_MCP_DRIVER_0_0.dcp' for cell 'design_1_i/MCP_DRIVER_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_PFC_Van_3ph_0_0/design_1_PFC_Van_3ph_0_0.dcp' for cell 'design_1_i/PFC_Van_3ph_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_amc_simulator_0_0/design_1_amc_simulator_0_0.dcp' for cell 'design_1_i/amc_simulator_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_amc_simulator_0_1/design_1_amc_simulator_0_1.dcp' for cell 'design_1_i/amc_simulator_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_amc_simulator_1_0/design_1_amc_simulator_1_0.dcp' for cell 'design_1_i/amc_simulator_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_c_addsub_0_0/design_1_c_addsub_0_0.dcp' for cell 'design_1_i/c_addsub_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_c_addsub_0_1/design_1_c_addsub_0_1.dcp' for cell 'design_1_i/c_addsub_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_c_addsub_1_0/design_1_c_addsub_1_0.dcp' for cell 'design_1_i/c_addsub_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_c_addsub_2_0/design_1_c_addsub_2_0.dcp' for cell 'design_1_i/c_addsub_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_c_addsub_3_0/design_1_c_addsub_3_0.dcp' for cell 'design_1_i/c_addsub_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_c_addsub_4_0/design_1_c_addsub_4_0.dcp' for cell 'design_1_i/c_addsub_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15.dcp' for cell 'design_1_i/clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.dcp' for cell 'design_1_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M_2/design_1_rst_clk_wiz_1_6M_2.dcp' for cell 'design_1_i/rst_clk_wiz_1_6M1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M1_0/design_1_rst_clk_wiz_1_6M1_0.dcp' for cell 'design_1_i/rst_clk_wiz_1_6M2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_sine_3ph_0_0/design_1_sine_3ph_0_0.dcp' for cell 'design_1_i/sine_3ph_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.dcp' for cell 'design_1_i/vio_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 773.254 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1732 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: design_1_i/ila_0 UUID: be177176-557e-59fe-ace2-fe04795a2b22 
+INFO: [Chipscope 16-324] Core: design_1_i/vio_0 UUID: 01a4b594-7c44-5fa6-bd66-f70f5f031273 
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15_board.xdc] for cell 'design_1_i/clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15_board.xdc] for cell 'design_1_i/clk_wiz/inst'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15.xdc] for cell 'design_1_i/clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15.xdc:54]
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15.xdc] for cell 'design_1_i/clk_wiz/inst'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M_2/design_1_rst_clk_wiz_1_6M_2_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M1/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M_2/design_1_rst_clk_wiz_1_6M_2_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M1/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M_2/design_1_rst_clk_wiz_1_6M_2.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M1/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M_2/design_1_rst_clk_wiz_1_6M_2.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M1/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M1_0/design_1_rst_clk_wiz_1_6M1_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M2/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M1_0/design_1_rst_clk_wiz_1_6M1_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M2/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M1_0/design_1_rst_clk_wiz_1_6M1_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M2/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_6M1_0/design_1_rst_clk_wiz_1_6M1_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_6M2/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/ila_0/inst'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/ila_0/inst'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/inst'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/inst'
+Parsing XDC File [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_design_1_clk_wiz_15' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:117]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:190]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:190]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:190]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:191]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:191]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:191]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:192]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:192]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:192]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:193]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:193]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:193]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:194]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:194]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:194]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:195]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:195]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:195]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:196]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:196]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:196]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:197]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:197]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:197]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:198]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:198]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:198]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:199]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:199]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:199]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:200]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:200]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:200]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:201]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:201]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:201]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:249]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:249]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:249]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:250]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:250]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:250]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:251]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:251]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:251]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:252]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:252]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:252]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:253]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:253]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:253]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:254]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:254]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:254]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:255]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:255]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:255]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:256]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:256]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:256]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:257]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:257]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:257]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:258]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:258]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:258]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:259]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:259]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:259]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:260]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:260]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:260]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:261]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:261]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:261]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:262]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:262]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:262]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:263]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:263]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:263]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:264]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:264]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:264]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:265]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:265]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:265]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:266]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:266]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:266]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:267]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:267]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:267]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:268]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:268]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:268]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:269]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:269]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:269]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:270]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:270]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:270]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:271]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:271]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:271]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:272]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:272]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:272]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:273]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:273]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:273]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:274]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:274]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:274]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:275]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:275]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:275]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:276]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:276]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:276]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:277]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:277]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:277]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'en' matched to 'port' objects. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:305]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'en_gd' matched to 'port' objects. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:306]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:308]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:308]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:308]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:309]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:309]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:309]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:310]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:310]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:310]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:311]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:311]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:311]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:312]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:312]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:312]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:313]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:313]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:313]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:314]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:314]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:314]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:315]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:315]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:315]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:316]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:316]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:316]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:317]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:317]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT2]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:317]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:319]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[9]/D'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:319]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:319]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:320]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[5]/D'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:320]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:320]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:321]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[13]/D'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:321]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:321]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:322]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/v_reg_reg[15]/CE'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:322]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:322]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:323]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/v_reg_reg[1]/CE'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:323]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:323]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:324]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/v_reg_reg[2]/CE'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:324]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:324]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:325]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/v_reg_reg[5]/CE'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:325]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:325]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:326]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[10]/D'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:326]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:326]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:327]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[8]/D'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:327]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:327]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:328]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/v_reg_reg[0]/CE'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:328]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[0]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:328]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:329]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:329]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:329]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:329]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:329]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:330]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:330]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:330]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:330]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:330]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:331]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:331]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:331]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:331]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:331]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:332]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:332]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:332]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:332]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:332]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:333]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:333]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:333]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:333]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:333]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:334]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:334]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:334]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:334]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:334]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:335]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:335]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:335]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:335]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:335]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:336]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:336]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:336]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:336]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:336]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:337]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:337]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:337]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:337]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:337]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:338]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:338]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:338]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:338]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:338]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_0/inst/u_hope_amc/cnt_reg[15]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:339]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_0/inst/u_hope_amc/cnt_reg[15]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:339]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[12]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:340]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[12]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:340]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[6]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:341]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[6]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:341]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[11]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:342]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[11]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:342]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[13]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:343]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[13]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:343]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[14]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:344]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[14]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:344]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[15]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:345]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[15]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:345]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[8]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:346]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[8]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:346]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[9]/R'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:347]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_1/inst/u_hope_amc/cnt_reg[9]/R}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:347]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/amc_simulator_0/inst/u_hope_amc/v_reg_reg[8]/CE'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:348]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins {design_1_i/amc_simulator_0/inst/u_hope_amc/v_reg_reg[8]/CE}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:348]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:349]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:349]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:349]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:350]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:350]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:350]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:351]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:351]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:351]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:352]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:352]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:352]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:353]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:353]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:353]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:354]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:354]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:354]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:355]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:355]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:355]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:356]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:356]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:356]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:357]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:357]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:357]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:358]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:358]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:358]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:359]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:359]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:359]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[28]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:360]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[28]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:360]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[3]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:361]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[3]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:361]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[37]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:362]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[37]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:362]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[39]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:363]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[39]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:363]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[25]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:364]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[25]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:364]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[38]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:365]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[38]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:365]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[34]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:366]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[34]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:366]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[15]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:367]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins {design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[15]/C}]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:367]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Common 17-14] Message 'Vivado 12-4739' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:367]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[29]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:368]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/PFC_Van_3ph_0/inst/u_real2uint8/mergedOutput_6_reg[11]/C'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:369]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:370]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:370]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:371]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:371]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:372]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:372]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:373]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:373]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:374]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:374]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:375]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:375]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:376]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:376]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:377]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:377]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:378]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:378]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins design_1_i/clk_wiz/inst/mmcm_adv_inst/CLKOUT3]'. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:379]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:379]
+Finished Parsing XDC File [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 2 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1419.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 124 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 130 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 1 instance 
+
+132 Infos, 132 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.215 ; gain = 882.570
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.648 . Memory (MB): peak = 1419.215 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_design_1_clk_wiz_15' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:117]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a155942e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.554 . Memory (MB): peak = 1419.215 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 093279203c1d34ec.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1813.457 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1813.457 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 2496587df
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Phase 1.1 Core Generation And Design Setup | Checksum: 2496587df
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1813.457 ; gain = 19.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2496587df
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Phase 1 Initialization | Checksum: 2496587df
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1813.457 ; gain = 19.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 2496587df
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.457 ; gain = 19.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 2496587df
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 2496587df
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.457 ; gain = 19.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 15 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 26d51a107
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Retarget | Checksum: 26d51a107
+INFO: [Opt 31-389] Phase Retarget created 379 cells and removed 389 cells
+INFO: [Opt 31-1021] In phase Retarget, 109 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 20c452a5a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Constant propagation | Checksum: 20c452a5a
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 18 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 90 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1813.457 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1813.457 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1c9a97f84
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Sweep | Checksum: 1c9a97f84
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 261 cells
+INFO: [Opt 31-1021] In phase Sweep, 1383 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1c9a97f84
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.457 ; gain = 19.000
+BUFG optimization | Checksum: 1c9a97f84
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1c9a97f84
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Shift Register Optimization | Checksum: 1c9a97f84
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1c9a97f84
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Post Processing Netlist | Checksum: 1c9a97f84
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 92 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 15f69dee5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.457 ; gain = 19.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1813.457 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 15f69dee5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Phase 9 Finalization | Checksum: 15f69dee5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.457 ; gain = 19.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             379  |             389  |                                            109  |
+|  Constant propagation         |               0  |              18  |                                             90  |
+|  Sweep                        |               0  |             261  |                                           1383  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             92  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 15f69dee5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.457 ; gain = 19.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_design_1_clk_wiz_15' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:117]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 2 Total Ports: 14
+Ending PowerOpt Patch Enables Task | Checksum: 19e5e4f97
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 19e5e4f97
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1983.090 ; gain = 169.633
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 19e5e4f97
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1e14d3027
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1983.090 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+173 Infos, 132 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1983.090 ; gain = 563.875
+INFO: [Vivado 12-24828] Executing command : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_design_1_clk_wiz_15' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:117]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1983.090 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper_opt.dcp' has been generated.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design -directive ExtraNetDelay_high
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Vivado_Tcl 4-2302] The placer was invoked with the 'ExtraNetDelay_high' directive.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 10e2ad287
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 18e2c8075
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.678 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 30654ffd3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 30654ffd3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 30654ffd3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 252832c45
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2d9a42d19
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 2d9a42d19
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 2efaa6d38
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2bdd0918f
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1088 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 406 nets or LUTs. Breaked 0 LUT, combined 406 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            406  |                   406  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            406  |                   406  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2e3da006e
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 25f358c89
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 25f358c89
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f5e7c4e7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f10079da
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 24a4b05f5
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1e2ac8530
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 31aa6c7c5
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 2584761cd
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 24cb7f8ed
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 1983.090 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 24cb7f8ed
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 1983.090 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Place 46-20] Placer is running with the ExtraNetDelay_high directive. Post Placement Optimization may take longer to complete with ExtraNetDelay_high compared to other directives.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_design_1_clk_wiz_15' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:117]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1eef0ccd0
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.402 | TNS=-0.469 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1a2447c51
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.502 . Memory (MB): peak = 1997.629 ; gain = 0.000
+INFO: [Place 46-33] Processed net design_1_i/rst_clk_wiz_1_6M1/U0/peripheral_reset[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 248b301c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.840 . Memory (MB): peak = 1997.629 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1eef0ccd0
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1997.629 ; gain = 14.539
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.480. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1b8d047f1
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+Phase 4.1 Post Commit Optimization | Checksum: 1b8d047f1
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1b8d047f1
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                4x4|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1b8d047f1
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+Phase 4.3 Placer Reporting | Checksum: 1b8d047f1
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1997.629 ; gain = 0.000
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 211b19817
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+Ending Placer Task | Checksum: 19eb35371
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 1997.629 ; gain = 14.539
+214 Infos, 132 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 1997.629 ; gain = 14.539
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1997.629 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1997.629 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2004.191 ; gain = 6.562
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.751 . Memory (MB): peak = 2007.742 ; gain = 10.113
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.742 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2007.742 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2007.742 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2007.742 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.811 . Memory (MB): peak = 2007.742 ; gain = 10.113
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design -directive AggressiveExplore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: AggressiveExplore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2007.742 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2280] Estimated Timing Summary | WNS= 0.480 | TNS= 0.000 | WHS= -0.696 |
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 3.00s |  WALL: 1.81s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2007.742 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.480 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 13e8e88b3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.842 . Memory (MB): peak = 2007.742 ; gain = 0.000
+
+Phase 2 Hold Fix Optimization
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=0.480 | TNS=0.000 | WHS=-0.696 | THS=-7.445 |
+INFO: [Physopt 32-45] Identified 6 candidate nets for hold slack optimization.
+INFO: [Physopt 32-234] Optimized 6 nets. Inserted 0 new ZHOLD_DELAYs. Calibrated 0 existing ZHOLD_DELAYs. Inserted 6 buffers.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2007.742 ; gain = 0.000
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=0.480 | TNS=0.000 | WHS=-0.150 | THS=-3.680 |
+Phase 2 Hold Fix Optimization | Checksum: 1a5b0149f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2007.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2007.742 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=0.480 | TNS=0.000 | WHS=-0.150 | THS=-3.680 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization            |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Single Cell Placement   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Multi Cell Placement    |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Rewire                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Cell           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  SLR Crossing            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  DSP Register            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Pin            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Total                   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Summary of Hold Fix Optimizations
+=================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization               |  WHS Gain (ns)  |  THS Gain (ns)  |  Added LUTs  |  Added FFs  |  Optimized Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT1 and ZHOLD Insertion   |          0.546  |          3.765  |           6  |          0  |               6  |           0  |           1  |  00:00:00  |
+|  Total                      |          0.546  |          3.765  |           6  |          0  |               6  |           0  |           1  |  00:00:00  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2007.742 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 2fbdaa8c4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2007.742 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+233 Infos, 132 Warnings, 100 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2031.617 ; gain = 8.902
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.737 . Memory (MB): peak = 2038.016 ; gain = 15.301
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2038.016 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2038.016 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2038.016 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2038.016 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.794 . Memory (MB): peak = 2038.016 ; gain = 15.301
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper_physopt.dcp' has been generated.
+Command: route_design -directive NoTimingRelaxation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'NoTimingRelaxation'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 6eff6d1e ConstDB: 0 ShapeSum: d186b1f0 RouteDB: d2732ae5
+Post Restoration Checksum: NetGraph: cdaa161a | NumContArr: 5156100b | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2a4521b5f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2068.066 ; gain = 30.051
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2a4521b5f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2068.066 ; gain = 30.051
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2a4521b5f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2068.066 ; gain = 30.051
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2f84e923f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2117.535 ; gain = 79.520
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.417  | TNS=0.000  | WHS=-0.194 | THS=-252.064|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 2cef3c802
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2231.215 ; gain = 193.199
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.417  | TNS=0.000  | WHS=-0.157 | THS=-3.998 |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: 32ad7bdec
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2231.215 ; gain = 193.199
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 26718
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 26717
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2fdb9c634
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2231.215 ; gain = 193.199
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 2fdb9c634
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2231.215 ; gain = 193.199
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 28f03c2a5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2236.980 ; gain = 198.965
+Phase 4 Initial Routing | Checksum: 28f03c2a5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 1740
+ Number of Nodes with overlaps = 109
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.267  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2995dfdc5
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.476  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 2a9253d33
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 2236.980 ; gain = 198.965
+Phase 5 Rip-up And Reroute | Checksum: 2a9253d33
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 278f004c6
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 2236.980 ; gain = 198.965
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.476  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 6.1 Delay CleanUp | Checksum: 26adf15e2
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 26adf15e2
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 2236.980 ; gain = 198.965
+Phase 6 Delay and Skew Optimization | Checksum: 26adf15e2
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.476  | TNS=0.000  | WHS=0.026  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 26b8c336b
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 2236.980 ; gain = 198.965
+Phase 7 Post Hold Fix | Checksum: 26b8c336b
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 18.0468 %
+  Global Horizontal Routing Utilization  = 21.138 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 26b8c336b
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 26b8c336b
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 29a4e52de
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 29a4e52de
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Phase 12 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.441  | TNS=0.000  | WHS=0.027  | THS=0.000  |
+
+Phase 12 Post Router Timing | Checksum: 25dd4d892
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 2236.980 ; gain = 198.965
+INFO: [Route 35-61] The design met the timing requirement.
+Total Elapsed time in route_design: 25.182 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: dca54f46
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 2236.980 ; gain = 198.965
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: dca54f46
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 2236.980 ; gain = 198.965
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+251 Infos, 132 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 2236.980 ; gain = 198.965
+INFO: [Vivado 12-24828] Executing command : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_design_1_clk_wiz_15' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:117]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2236.980 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_design_1_clk_wiz_15' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.srcs/constrs_1/imports/fpga/Cmod-S7-25-Master.xdc:117]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+270 Infos, 133 Warnings, 100 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2238.027 ; gain = 1.047
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2261.418 ; gain = 8.926
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.790 . Memory (MB): peak = 2267.770 ; gain = 15.277
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2267.770 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 2267.770 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2267.770 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2267.770 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.971 . Memory (MB): peak = 2267.770 ; gain = 15.277
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Angel/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.runs/impl_3/design_1_wrapper_routed.dcp' has been generated.
+Command: write_bitstream -force design_1_wrapper.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 3652928 bits.
+Writing bitstream ./design_1_wrapper.bit...
+Writing bitstream ./design_1_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+285 Infos, 133 Warnings, 100 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2671.934 ; gain = 404.164
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 20:34:18 2025...

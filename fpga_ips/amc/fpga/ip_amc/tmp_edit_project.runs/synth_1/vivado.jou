@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct 29 19:22:56 2024
+# Process ID: 16164
+# Current directory: c:/Users/angro/Desktop/hil/amc/fpga/ip_amc/tmp_edit_project.runs/synth_1
+# Command line: vivado.exe -log amc_simulator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source amc_simulator.tcl
+# Log file: c:/Users/angro/Desktop/hil/amc/fpga/ip_amc/tmp_edit_project.runs/synth_1/amc_simulator.vds
+# Journal file: c:/Users/angro/Desktop/hil/amc/fpga/ip_amc/tmp_edit_project.runs/synth_1\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :17179 MB
+# Total Virtual     :25614 MB
+# Available Virtual :8520 MB
+#-----------------------------------------------------------
+source amc_simulator.tcl -notrace

@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May  2 08:39:38 2025
+# Process ID         : 5568
+# Current directory  : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj
+# Command line       : vivado.exe -mode batch -source createproject.tcl
+# Log file           : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/vivado.log
+# Journal file       : C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj\vivado.jou
+# Running On         : AngelPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 265KF
+# CPU Frequency      : 3878 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 20
+# Host memory        : 34042 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36190 MB
+# Available Virtual  : 23662 MB
+#-----------------------------------------------------------
+source createproject.tcl
+# create_project -force fil_test_fil .
+# set_property target_language VHDL [current_project]
+# set_property part xc7s25csga225-1 [current_project]
+WARNING: [Ipconfig 75-871] Could not load NoC clock tree from device
+WARNING: [Ipconfig 75-570] Unable to create NoC or AIE Models.
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fil_test.vhd}
+# create_ip -name clk_wiz -vendor xilinx.com -library ip -module_name clk_wiz_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+# set_property -dict [list  CONFIG.PRIM_IN_FREQ {12.000} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25}] [get_ips clk_wiz_0]
+# create_ip -name fifo_generator -vendor xilinx.com -library ip -module_name jtag_mac_fifo
+# set_property -dict [list CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Input_Data_Width {8} CONFIG.Input_Depth {4096} CONFIG.Read_Data_Count {true}  CONFIG.Use_Embedded_Registers {false} CONFIG.read_data_count_width {12} CONFIG.Almost_Full_Flag {true}] [get_ips jtag_mac_fifo]
+# create_ip -name fifo_generator -vendor xilinx.com -library ip -module_name simcycle_fifo
+# set_property -dict [list CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Input_Data_Width {16} CONFIG.Input_Depth {16} CONFIG.Use_Embedded_Registers {false} ] [get_ips simcycle_fifo]
+# generate_target all [get_ips] -force
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'jtag_mac_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'jtag_mac_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'jtag_mac_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'jtag_mac_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'simcycle_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'simcycle_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'simcycle_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'simcycle_fifo'...
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/jtag_mac.v}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/jtag_mac_fifo_wrapper.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/simcycle_fifo_wrapper.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/mwfil_dpscram.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/mwfil_udfifo.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/mwfil_bus2dut.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/mwfil_chifcore.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/mwfil_controller.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/mwfil_dut2bus.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_wrapper.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/mwfil_chiftop.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.vhd}
+# add_files -norecurse {C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.xdc}
+# set_property top fil_test_fil [current_fileset]
+# launch_runs impl_1 -jobs 20
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jtag_mac_fifo
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: simcycle_fifo
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_0
+[Fri May  2 08:39:46 2025] Launched clk_wiz_0_synth_1, jtag_mac_fifo_synth_1, simcycle_fifo_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.runs/clk_wiz_0_synth_1/runme.log
+jtag_mac_fifo_synth_1: C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.runs/jtag_mac_fifo_synth_1/runme.log
+simcycle_fifo_synth_1: C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.runs/simcycle_fifo_synth_1/runme.log
+synth_1: C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.runs/synth_1/runme.log
+[Fri May  2 08:39:46 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.runs/impl_1/runme.log
+# wait_on_run impl_1
+[Fri May  2 08:39:46 2025] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log fil_test_fil.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fil_test_fil.tcl -notrace
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri May  2 08:40:51 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fil_test_fil.tcl -notrace
+Command: link_design -top fil_test_fil -part xc7s25csga225-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.dcp' for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.dcp' for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo.dcp' for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 683.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 76 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+Parsing XDC File [C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sysclk' already exists, overwriting the previous clock with the same name. [C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.xdc:1]
+WARNING: [Vivado 12-2489] -period contains time 66.666667 which will be rounded to 66.667 to ensure it is an integer multiple of 1 picosecond [C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.xdc:6]
+WARNING: [Vivado 12-2489] -waveform contains time 33.333333 which will be rounded to 33.333 to ensure it is an integer multiple of 1 picosecond [C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.xdc:6]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.xdc:7]
+Finished Parsing XDC File [C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/filsrc/fil_test_fil.xdc]
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo_clocks.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0'
+Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo_clocks.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+Finished Parsing XDC File [c:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/fpgaproj/fil_test_fil.gen/sources_1/ip/simcycle_fifo/simcycle_fifo_clocks.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1256.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+15 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.

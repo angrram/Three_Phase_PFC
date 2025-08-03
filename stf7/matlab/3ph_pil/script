@@ -1,0 +1,10 @@
+config load "C:\Users\Angel\Desktop\hil\pfc3ph\stf7\matlab\3ph_pil\3ph_pil.ioc"
+project toolchain STM32CubeIDE
+
+SetStructure Advanced
+
+project setCustomFWPath "C:\Users\Angel\STM32Cube\Repository\STM32Cube_FW_F7_V1.16.2"
+
+project generate 
+
+exit wait

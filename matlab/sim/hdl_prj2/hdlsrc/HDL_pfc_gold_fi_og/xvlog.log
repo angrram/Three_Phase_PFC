@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/simscape_system_tc.v" into library work
+INFO: [VRFC 10-311] analyzing module simscape_system_tc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/SimpleDualPortRAM_generic.v" into library work
+INFO: [VRFC 10-311] analyzing module SimpleDualPortRAM_generic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/ShiftRegisterRAM_Wrapper_generic.v" into library work
+INFO: [VRFC 10-311] analyzing module ShiftRegisterRAM_Wrapper_generic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/FET_CTRL.v" into library work
+INFO: [VRFC 10-311] analyzing module FET_CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_9.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_product_9
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixB.v" into library work
+INFO: [VRFC 10-311] analyzing module hNNewMatrixB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_6.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_product_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixA.v" into library work
+INFO: [VRFC 10-311] analyzing module hNNewMatrixA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_7.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_product_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixC.v" into library work
+INFO: [VRFC 10-311] analyzing module hNNewMatrixC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/dot_product_7_block.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_product_7_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/hNNewMatrixD.v" into library work
+INFO: [VRFC 10-311] analyzing module hNNewMatrixD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/HDL_Subsystem.v" into library work
+INFO: [VRFC 10-311] analyzing module HDL_Subsystem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/real2uint8.v" into library work
+INFO: [VRFC 10-311] analyzing module real2uint8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Angel/Desktop/hil/pfc3ph/matlab/sim/hdl_prj2/hdlsrc/HDL_pfc_gold_fi_og/simscape_system.v" into library work
+INFO: [VRFC 10-311] analyzing module simscape_system

@@ -1,0 +1,1211 @@
+
+*** Running vivado
+    with args -log FPGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Dec  8 17:27:25 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source FPGA.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 486.316 ; gain = 200.414
+Command: synth_design -top FPGA -part xc7s25csga225-1 -directive AreaOptimized_high -control_set_opt_threshold 1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Device 21-9227] Part: xc7s25csga225-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5028
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1316.098 ; gain = 447.062
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FPGA' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/FPGA.v:49]
+INFO: [Synth 8-6157] synthesizing module 'FPGA_tc' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/FPGA_tc.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'FPGA_tc' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/FPGA_tc.v:34]
+INFO: [Synth 8-6157] synthesizing module 'HDL_Subsystem' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/HDL_Subsystem.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 120 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6157] synthesizing module 'HDL_Algorithm' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/HDL_Algorithm.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized0' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter DataWidth bound to: 90 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized0' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DA_MATRIX' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Detect_Rise_Positive' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Detect_Rise_Positive.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Positive' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Positive.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Positive' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Positive.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Detect_Rise_Positive' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Detect_Rise_Positive.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Detect_Rise_Positive1' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Detect_Rise_Positive1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Positive_block' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Positive_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Positive_block' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Positive_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Detect_Rise_Positive1' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Detect_Rise_Positive1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Subsystem' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Subsystem.v:22]
+INFO: [Synth 8-6157] synthesizing module 'a_b_sub' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/a_b_sub.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dsp_block' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/dsp_block.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MUAC_DSP_2' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/MUAC_DSP_2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'MUAC_DSP_2' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/MUAC_DSP_2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dsp_block' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/dsp_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'a_b_sub' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/a_b_sub.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Subsystem' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Subsystem.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Sample_and_Hold' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Sample_and_Hold.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Sample_and_Hold' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Sample_and_Hold.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Sample_and_Hold1' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Sample_and_Hold1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SimpleDualPortRAM_generic__parameterized1' [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/SimpleDualPortRAM_generic.v:22]
+	Parameter AddrWidth bound to: 2 - type: integer 
+	Parameter DataWidth bound to: 120 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SimpleDualPortRAM_generic__parameterized1' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/SimpleDualPortRAM_generic.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Sample_and_Hold1' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Sample_and_Hold1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'DA_MATRIX' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'HDL_Algorithm' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/HDL_Algorithm.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'HDL_Subsystem' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/HDL_Subsystem.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FPGA' (0#1) [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/FPGA.v:49]
+WARNING: [Synth 8-6014] Unused sequential element rd_19_reg_reg[15] was removed.  [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v:5593]
+WARNING: [Synth 8-6014] Unused sequential element rd_19_reg_reg[16] was removed.  [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v:5593]
+WARNING: [Synth 8-6014] Unused sequential element rd_19_reg_reg[17] was removed.  [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v:5593]
+WARNING: [Synth 8-6014] Unused sequential element rd_19_reg_reg[18] was removed.  [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v:5593]
+WARNING: [Synth 8-6014] Unused sequential element rd_19_reg_reg[19] was removed.  [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v:5593]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1572.996 ; gain = 703.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1572.996 ; gain = 703.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1572.996 ; gain = 703.961
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.941 . Memory (MB): peak = 1572.996 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/clock_constraint.xdc]
+Finished Parsing XDC File [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/clock_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1694.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.519 . Memory (MB): peak = 1702.695 ; gain = 8.004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1702.695 ; gain = 833.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1702.695 ; gain = 833.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1702.695 ; gain = 833.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 1702.695 ; gain = 833.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  10 Input   60 Bit       Adders := 1     
+	   2 Input   41 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   3 Input   30 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 1     
+	   3 Input   21 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 9     
+	   2 Input    2 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 10    
++---Registers : 
+	              120 Bit    Registers := 27    
+	               90 Bit    Registers := 3     
+	               60 Bit    Registers := 3     
+	               30 Bit    Registers := 1106  
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 73    
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 28    
+	                2 Bit    Registers := 29    
+	                1 Bit    Registers := 67    
++---Multipliers : 
+	              30x31  Multipliers := 1     
+	              30x30  Multipliers := 20    
++---RAMs : 
+	              960 Bit	(8 X 120 bit)          RAMs := 4     
+	              720 Bit	(8 X 90 bit)          RAMs := 1     
+	              480 Bit	(4 X 120 bit)          RAMs := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 685   
+	   2 Input   25 Bit        Muxes := 50    
+	   2 Input   16 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 24    
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mult_mul_temp[0], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: Generating DSP mult_mul_temp[0], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: Generating DSP mult_mul_temp[0], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: Generating DSP mult_mul_temp[0], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: operator mult_mul_temp[0] is absorbed into DSP mult_mul_temp[0].
+DSP Report: Generating DSP mult_mul_temp[1], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: Generating DSP mult_mul_temp[1], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: Generating DSP mult_mul_temp[1], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: Generating DSP mult_mul_temp[1], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: operator mult_mul_temp[1] is absorbed into DSP mult_mul_temp[1].
+DSP Report: Generating DSP mult_mul_temp[2], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: Generating DSP mult_mul_temp[2], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: Generating DSP mult_mul_temp[2], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: Generating DSP mult_mul_temp[2], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: operator mult_mul_temp[2] is absorbed into DSP mult_mul_temp[2].
+DSP Report: Generating DSP mult_mul_temp[3], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: Generating DSP mult_mul_temp[3], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: Generating DSP mult_mul_temp[3], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: Generating DSP mult_mul_temp[3], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: operator mult_mul_temp[3] is absorbed into DSP mult_mul_temp[3].
+DSP Report: Generating DSP mult_mul_temp[4], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: Generating DSP mult_mul_temp[4], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: Generating DSP mult_mul_temp[4], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: Generating DSP mult_mul_temp[4], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: operator mult_mul_temp[4] is absorbed into DSP mult_mul_temp[4].
+DSP Report: Generating DSP mult_mul_temp[5], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: Generating DSP mult_mul_temp[5], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: Generating DSP mult_mul_temp[5], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: Generating DSP mult_mul_temp[5], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: operator mult_mul_temp[5] is absorbed into DSP mult_mul_temp[5].
+DSP Report: Generating DSP mult_mul_temp[6], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: Generating DSP mult_mul_temp[6], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: Generating DSP mult_mul_temp[6], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: Generating DSP mult_mul_temp[6], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: operator mult_mul_temp[6] is absorbed into DSP mult_mul_temp[6].
+DSP Report: Generating DSP mult_mul_temp[7], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: Generating DSP mult_mul_temp[7], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: Generating DSP mult_mul_temp[7], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: Generating DSP mult_mul_temp[7], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: operator mult_mul_temp[7] is absorbed into DSP mult_mul_temp[7].
+DSP Report: Generating DSP mult_mul_temp[8], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: Generating DSP mult_mul_temp[8], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: Generating DSP mult_mul_temp[8], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: Generating DSP mult_mul_temp[8], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: operator mult_mul_temp[8] is absorbed into DSP mult_mul_temp[8].
+DSP Report: Generating DSP mult_mul_temp[9], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: Generating DSP mult_mul_temp[9], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: Generating DSP mult_mul_temp[9], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: Generating DSP mult_mul_temp[9], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: operator mult_mul_temp[9] is absorbed into DSP mult_mul_temp[9].
+DSP Report: Generating DSP mult_mul_temp[10], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: Generating DSP mult_mul_temp[10], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: Generating DSP mult_mul_temp[10], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: Generating DSP mult_mul_temp[10], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: operator mult_mul_temp[10] is absorbed into DSP mult_mul_temp[10].
+DSP Report: Generating DSP mult_mul_temp[11], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: Generating DSP mult_mul_temp[11], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: Generating DSP mult_mul_temp[11], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: Generating DSP mult_mul_temp[11], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: operator mult_mul_temp[11] is absorbed into DSP mult_mul_temp[11].
+DSP Report: Generating DSP mult_mul_temp[12], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: Generating DSP mult_mul_temp[12], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: Generating DSP mult_mul_temp[12], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: Generating DSP mult_mul_temp[12], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: operator mult_mul_temp[12] is absorbed into DSP mult_mul_temp[12].
+DSP Report: Generating DSP mult_mul_temp[13], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: Generating DSP mult_mul_temp[13], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: Generating DSP mult_mul_temp[13], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: Generating DSP mult_mul_temp[13], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: operator mult_mul_temp[13] is absorbed into DSP mult_mul_temp[13].
+DSP Report: Generating DSP mult_mul_temp[14], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: Generating DSP mult_mul_temp[14], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: Generating DSP mult_mul_temp[14], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: Generating DSP mult_mul_temp[14], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: operator mult_mul_temp[14] is absorbed into DSP mult_mul_temp[14].
+DSP Report: Generating DSP mult_mul_temp[15], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: Generating DSP mult_mul_temp[15], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: Generating DSP mult_mul_temp[15], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: Generating DSP mult_mul_temp[15], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: operator mult_mul_temp[15] is absorbed into DSP mult_mul_temp[15].
+DSP Report: Generating DSP mult_mul_temp[16], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: Generating DSP mult_mul_temp[16], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: Generating DSP mult_mul_temp[16], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: Generating DSP mult_mul_temp[16], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: operator mult_mul_temp[16] is absorbed into DSP mult_mul_temp[16].
+DSP Report: Generating DSP mult_mul_temp[17], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: Generating DSP mult_mul_temp[17], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: Generating DSP mult_mul_temp[17], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: Generating DSP mult_mul_temp[17], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: operator mult_mul_temp[17] is absorbed into DSP mult_mul_temp[17].
+DSP Report: Generating DSP mult_mul_temp[18], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: Generating DSP mult_mul_temp[18], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: Generating DSP mult_mul_temp[18], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: Generating DSP mult_mul_temp[18], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: operator mult_mul_temp[18] is absorbed into DSP mult_mul_temp[18].
+DSP Report: Generating DSP mult_mul_temp[19], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+DSP Report: Generating DSP mult_mul_temp[19], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+DSP Report: Generating DSP mult_mul_temp[19], operation Mode is: A*B.
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+DSP Report: Generating DSP mult_mul_temp[19], operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+DSP Report: operator mult_mul_temp[19] is absorbed into DSP mult_mul_temp[19].
+WARNING: [Synth 8-6014] Unused sequential element PipelineRegister_reg_reg[0] was removed.  [c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/FPGA.v:4373]
+DSP Report: Generating DSP mult_mul_temp, operation Mode is: A*B.
+DSP Report: operator mult_mul_temp is absorbed into DSP mult_mul_temp.
+DSP Report: operator mult_mul_temp is absorbed into DSP mult_mul_temp.
+DSP Report: Generating DSP mult_mul_temp, operation Mode is: A*B.
+DSP Report: operator mult_mul_temp is absorbed into DSP mult_mul_temp.
+DSP Report: Generating DSP mult_mul_temp, operation Mode is: A*B.
+DSP Report: operator mult_mul_temp is absorbed into DSP mult_mul_temp.
+DSP Report: Generating DSP mult_mul_temp, operation Mode is: A*B.
+DSP Report: operator mult_mul_temp is absorbed into DSP mult_mul_temp.
+---------------------------------------------------------------------------------
+Start Pre Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Iterative Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Post Area Optimization : Time (s): cpu = 00:03:05 ; elapsed = 00:04:33 . Memory (MB): peak = 1774.195 ; gain = 905.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:06 ; elapsed = 00:04:34 . Memory (MB): peak = 1774.195 ; gain = 905.160
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 84, Available = 80. Use report_utilization command for details.
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[0]_0 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[0]_0 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[10]_18 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[10]_18 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[11]_1a : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[11]_1a : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[12]_1c : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[12]_1c : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[13]_1e : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[13]_1e : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[14]_20 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[14]_20 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[15]_22 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[15]_22 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[16]_24 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[16]_24 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[17]_26 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[17]_26 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[18]_28 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[18]_28 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[19]_2a : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[19]_2a : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[1]_6 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[1]_6 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[2]_8 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[2]_8 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[3]_a : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[3]_a : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[4]_c : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[4]_c : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[5]_e : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[5]_e : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[6]_10 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[6]_10 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[7]_12 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[7]_12 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[8]_14 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[8]_14 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[9]_16 : 0 0 : 3101 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[9]_16 : 0 1 : 2302 5403 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[0]_3 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[0]_3 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[10]_19 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[10]_19 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[11]_1b : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[11]_1b : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[12]_1d : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[12]_1d : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[13]_1f : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[13]_1f : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[14]_21 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[14]_21 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[15]_23 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[15]_23 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[16]_25 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[16]_25 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[17]_27 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[17]_27 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[18]_29 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[18]_29 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[19]_2b : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[19]_2b : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[1]_7 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[1]_7 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[2]_9 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[2]_9 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[3]_b : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[3]_b : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[4]_d : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[4]_d : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[5]_f : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[5]_f : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[6]_11 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[6]_11 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[7]_13 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[7]_13 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[8]_15 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[8]_15 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[9]_17 : 0 0 : 2283 4350 : Used 1 time 0
+ Sort Area is DA_MATRIX__GB0 mult_mul_temp[9]_17 : 0 1 : 2067 4350 : Used 1 time 0
+ Sort Area is FPGA__GC0 mult_mul_temp_2c : 0 0 : 3101 3101 : Used 1 time 0
+ Sort Area is FPGA__GC0 mult_mul_temp_2d : 0 0 : 2317 2317 : Used 1 time 0
+ Sort Area is FPGA__GC0 mult_mul_temp_2f : 0 0 : 2283 2283 : Used 1 time 0
+ Sort Area is FPGA__GC0 mult_mul_temp_30 : 0 0 : 1956 1956 : Used 1 time 0
+ DSP resource Status: mult_mul_temp[0]_3 0 4350 2283: Used 1 time : Accepted (41 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[0]_3 1 4350 2067: Used 1 time : Accepted (42 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[0]_0 0 5403 3101: Used 1 time : Accepted (1 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[0]_0 1 5403 2302: Used 1 time : Accepted (2 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[1]_7 0 4350 2283: Used 1 time : Accepted (63 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[1]_7 1 4350 2067: Used 1 time : Accepted (64 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[1]_6 0 5403 3101: Used 1 time : Accepted (23 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[1]_6 1 5403 2302: Used 1 time : Accepted (24 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[2]_9 0 4350 2283: Used 1 time : Accepted (65 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[2]_9 1 4350 2067: Used 1 time : Accepted (66 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[2]_8 0 5403 3101: Used 1 time : Accepted (25 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[2]_8 1 5403 2302: Used 1 time : Accepted (26 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[3]_b 0 4350 2283: Used 1 time : Accepted (67 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[3]_b 1 4350 2067: Used 1 time : Accepted (68 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[3]_a 0 5403 3101: Used 1 time : Accepted (27 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[3]_a 1 5403 2302: Used 1 time : Accepted (28 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[4]_d 0 4350 2283: Used 1 time : Accepted (69 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[4]_d 1 4350 2067: Used 1 time : Accepted (70 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[4]_c 0 5403 3101: Used 1 time : Accepted (29 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[4]_c 1 5403 2302: Used 1 time : Accepted (30 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[5]_f 0 4350 2283: Used 1 time : Accepted (71 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[5]_f 1 4350 2067: Used 1 time : Accepted (72 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[5]_e 0 5403 3101: Used 1 time : Accepted (31 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[5]_e 1 5403 2302: Used 1 time : Accepted (32 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[6]_11 0 4350 2283: Used 1 time : Accepted (73 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[6]_11 1 4350 2067: Used 1 time : Accepted (74 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[6]_10 0 5403 3101: Used 1 time : Accepted (33 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[6]_10 1 5403 2302: Used 1 time : Accepted (34 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[7]_13 0 4350 2283: Used 1 time : Accepted (75 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[7]_13 1 4350 2067: Used 1 time : Accepted (76 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[7]_12 0 5403 3101: Used 1 time : Accepted (35 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[7]_12 1 5403 2302: Used 1 time : Accepted (36 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[8]_15 0 4350 2283: Used 1 time : Accepted (77 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[8]_15 1 4350 2067: Used 1 time : Accepted (78 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[8]_14 0 5403 3101: Used 1 time : Accepted (37 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[8]_14 1 5403 2302: Used 1 time : Accepted (38 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[9]_17 0 4350 2283: Used 1 time : Accepted (79 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[9]_17 1 4350 2067: Used 1 time : Accepted (80 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[9]_16 0 5403 3101: Used 1 time : Accepted (39 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[9]_16 1 5403 2302: Used 1 time : Accepted (40 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[10]_19 0 4350 2283: Used 1 time : Accepted (43 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[10]_19 1 4350 2067: Used 1 time : Accepted (44 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[10]_18 0 5403 3101: Used 1 time : Accepted (3 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[10]_18 1 5403 2302: Used 1 time : Accepted (4 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[11]_1b 0 4350 2283: Used 1 time : Accepted (45 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[11]_1b 1 4350 2067: Used 1 time : Accepted (46 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[11]_1a 0 5403 3101: Used 1 time : Accepted (5 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[11]_1a 1 5403 2302: Used 1 time : Accepted (6 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[12]_1d 0 4350 2283: Used 1 time : Accepted (47 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[12]_1d 1 4350 2067: Used 1 time : Accepted (48 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[12]_1c 0 5403 3101: Used 1 time : Accepted (7 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[12]_1c 1 5403 2302: Used 1 time : Accepted (8 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[13]_1f 0 4350 2283: Used 1 time : Accepted (49 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[13]_1f 1 4350 2067: Used 1 time : Accepted (50 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[13]_1e 0 5403 3101: Used 1 time : Accepted (9 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[13]_1e 1 5403 2302: Used 1 time : Accepted (10 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[14]_21 0 4350 2283: Used 1 time : Accepted (51 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[14]_21 1 4350 2067: Used 1 time : Accepted (52 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[14]_20 0 5403 3101: Used 1 time : Accepted (11 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[14]_20 1 5403 2302: Used 1 time : Accepted (12 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[15]_23 0 4350 2283: Used 1 time : Accepted (53 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[15]_23 1 4350 2067: Used 1 time : Accepted (54 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[15]_22 0 5403 3101: Used 1 time : Accepted (13 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[15]_22 1 5403 2302: Used 1 time : Accepted (14 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[16]_25 0 4350 2283: Used 1 time : Accepted (55 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[16]_25 1 4350 2067: Used 1 time : Accepted (56 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[16]_24 0 5403 3101: Used 1 time : Accepted (15 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[16]_24 1 5403 2302: Used 1 time : Accepted (16 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[17]_27 0 4350 2283: Used 1 time : Accepted (57 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[17]_27 1 4350 2067: Used 1 time : Accepted (58 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[17]_26 0 5403 3101: Used 1 time : Accepted (17 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[17]_26 1 5403 2302: Used 1 time : Accepted (18 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[18]_29 0 4350 2283: Used 1 time : Accepted (59 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[18]_29 1 4350 2067: Used 1 time : Accepted (60 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[18]_28 0 5403 3101: Used 1 time : Accepted (19 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[18]_28 1 5403 2302: Used 1 time : Accepted (20 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[19]_2b 0 4350 2283: Used 1 time : Accepted (61 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[19]_2b 1 4350 2067: Used 1 time : Accepted (62 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[19]_2a 0 5403 3101: Used 1 time : Accepted (21 < 80) uniquify 0 
+ DSP resource Status: mult_mul_temp[19]_2a 1 5403 2302: Used 1 time : Accepted (22 < 80) uniquify 0 
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[0], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[0], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[0], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[0], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[0] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[0].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[1], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[1], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[1], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[1], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[1] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[1].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[2], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[2], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[2], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[2], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[2] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[2].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[3], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[3], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[3], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[3], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[3] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[3].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[4], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[4], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[4], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[4], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[4] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[4].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[5], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[5], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[5], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[5], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[5] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[5].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[6], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[6], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[6], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[6], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[6] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[6].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[7], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[7], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[7], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[7], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[7] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[7].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[8], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[8], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[8], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[8], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[8] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[8].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[9], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[9], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[9], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[9], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[9] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[9].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[10], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[10], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[10], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[10], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[10] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[10].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[11], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[11] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[11].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[11] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[11].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[11], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[11] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[11].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[11] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[11].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[12], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[12] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[12].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[12] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[12].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[12], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[12] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[12].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[12] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[12].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[13], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[13], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[13], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[13], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[13] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[13].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[14], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[14], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[14], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[14], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[14] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[14].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[15], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[15] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[15].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[15] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[15].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[15], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[15] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[15].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[15] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[15].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[16], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[16] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[16].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[16] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[16].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[16], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[16] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[16].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[16] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[16].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[17], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[17] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[17].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[17] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[17].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[17], operation Mode is (post resource management): C+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[17] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[17].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[17] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[17].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[18], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[18], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[18], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[18], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[18] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[18].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[19], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[19], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[19], operation Mode is (post resource management): A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+DSP Report: Generating DSP u_MUAC_DSP_2/mult_mul_temp[19], operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+DSP Report: operator u_MUAC_DSP_2/mult_mul_temp[19] is absorbed into DSP u_MUAC_DSP_2/mult_mul_temp[19].
+ DSP resource Status: mult_mul_temp_2c 0 3101 3101: Used 1 time : Rejected (81 > 80) uniquify 0 
+ DSP resource Status: mult_mul_temp_2f 0 2283 2283: Used 1 time : Rejected (83 > 80) uniquify 0 
+ DSP resource Status: mult_mul_temp_2d 0 2317 2317: Used 1 time : Rejected (82 > 80) uniquify 0 
+ DSP resource Status: mult_mul_temp_30 0 1956 1956: Used 1 time : Rejected (84 > 80) uniquify 0 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|FPGA        | u_ShiftRegisterRAM/ram_reg         | 8 x 90(READ_FIRST)     | W |   | 8 x 90(WRITE_FIRST)    |   | R | Port A and B     | 1      | 1      | 
+|FPGA        | u_ShiftRegisterRAM_1/ram_reg       | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|FPGA        | u_ShiftRegisterRAM_2/ram_reg       | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|FPGA        | u_ShiftRegisterRAM_3/ram_reg       | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|FPGA        | u_ShiftRegisterRAM_generic/ram_reg | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++------------+------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++----------------------------------+------------------------------+-----------+----------------------+--------------+
+|Module Name                       | RTL Object                   | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------------+------------------------------+-----------+----------------------+--------------+
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM/ram_reg   | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_1/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_2/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_3/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_4/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
++----------------------------------+------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUAC_DSP_2  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FPGA        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FPGA        | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FPGA        | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FPGA        | A*B            | 14     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:14 ; elapsed = 00:04:46 . Memory (MB): peak = 1774.195 ; gain = 905.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:20 ; elapsed = 00:04:56 . Memory (MB): peak = 1774.195 ; gain = 905.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|FPGA        | u_ShiftRegisterRAM/ram_reg         | 8 x 90(READ_FIRST)     | W |   | 8 x 90(WRITE_FIRST)    |   | R | Port A and B     | 1      | 1      | 
+|FPGA        | u_ShiftRegisterRAM_1/ram_reg       | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|FPGA        | u_ShiftRegisterRAM_2/ram_reg       | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|FPGA        | u_ShiftRegisterRAM_3/ram_reg       | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|FPGA        | u_ShiftRegisterRAM_generic/ram_reg | 8 x 120(READ_FIRST)    | W |   | 8 x 120(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++------------+------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++----------------------------------+------------------------------+-----------+----------------------+--------------+
+|Module Name                       | RTL Object                   | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------------+------------------------------+-----------+----------------------+--------------+
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM/ram_reg   | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_1/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_2/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_3/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
+|u_DA_MATRIXi_4/u_Sample_and_Hold1 | u_ShiftRegisterRAM_4/ram_reg | Implied   | 4 x 120              | RAM32M x 20  | 
++----------------------------------+------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM_1/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM_1/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM_2/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM_2/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM_3/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_HDL_Algorithm/u_ShiftRegisterRAM_3/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_ShiftRegisterRAM_generic/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_HDL_Subsystem/u_ShiftRegisterRAM_generic/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:33 ; elapsed = 00:05:15 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:38 ; elapsed = 00:05:22 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:38 ; elapsed = 00:05:22 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:44 ; elapsed = 00:05:30 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:44 ; elapsed = 00:05:30 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:45 ; elapsed = 00:05:32 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:45 ; elapsed = 00:05:32 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|FPGA        | u_HDL_Subsystem/u_HDL_Algorithm/u_DA_MATRIX/u_Detect_Rise_Positive/rd_1_reg_reg[3] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|FPGA        | u_HDL_Subsystem/u_HDL_Algorithm/u_DA_MATRIX/u_Sample_and_Hold/rd_5_reg_reg[30][29] | 4      | 24    | YES          | NO                 | YES               | 24     | 0       | 
+|FPGA        | rd_11_reg_reg[3]                                                                   | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 30     | 2      | 0      | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 17     | 2      | 0      | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 30     | 2      | 0      | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 17     | 2      | 0      | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 30     | 18     | 48     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 17     | 18     | 48     | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 30     | 18     | 48     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 17     | 18     | 48     | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 30     | 18     | 48     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 17     | 18     | 48     | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 30     | 18     | 48     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 17     | 18     | 48     | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 30     | 18     | 48     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | C+A*B        | 17     | 18     | 48     | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 30     | 18     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_block   | PCIN>>17+A*B | 17     | 18     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   694|
+|3     |DSP48E1  |    70|
+|5     |LUT1     |    36|
+|6     |LUT2     |  4904|
+|7     |LUT3     |  5191|
+|8     |LUT4     |  2340|
+|9     |LUT5     |   831|
+|10    |LUT6     |  2219|
+|11    |MUXF7    |    27|
+|12    |RAM32M   |    94|
+|13    |RAMB18E1 |     1|
+|14    |RAMB36E1 |     9|
+|15    |SRL16E   |    26|
+|16    |FDCE     | 27149|
+|17    |FDPE     |    42|
+|18    |FDRE     |   572|
+|19    |IBUF     |   303|
+|20    |OBUF     |   241|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:45 ; elapsed = 00:05:32 . Memory (MB): peak = 1832.238 ; gain = 963.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:29 ; elapsed = 00:05:20 . Memory (MB): peak = 1832.238 ; gain = 833.504
+Synthesis Optimization Complete : Time (s): cpu = 00:03:45 ; elapsed = 00:05:32 . Memory (MB): peak = 1832.238 ; gain = 963.203
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.637 . Memory (MB): peak = 1832.238 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 895 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1837.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 94 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 94 instances
+
+Synth Design complete | Checksum: fe7df470
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:56 ; elapsed = 00:05:47 . Memory (MB): peak = 1837.770 ; gain = 1351.453
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.268 . Memory (MB): peak = 1837.770 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/managed_ip_project/managed_ip_project.tmp/pfc_3ph.runs/synth_1/FPGA.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file FPGA_utilization_synth.rpt -pb FPGA_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 17:33:27 2024...

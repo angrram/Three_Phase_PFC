@@ -1,0 +1,1340 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Delay Balancing Report for HDL_pfc_gold_fi_og
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdDelayBalancing'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+Delay Balancing Report for HDL_pfc_gold_fi_og
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Port
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Pipeline Latency
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Phase Delay
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Ia
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Ib
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Ic
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Vc
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Vb
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Va
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Vout
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_I_load
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Ia1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Ib1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDL_pfc_gold_fi_og/simscape_system/O_Ic1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+
+</table>
+<br /><br />Design delays are fully utilized to absorb latency introduced by optimizations and block implementations.<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br />Tables of blocks that introduce latency, design delays that absorb latency, and delay absorption blockers. To exclude specific delay block from being used for absorption, turn off block property 'AllowDelayDistribution'.<br /><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:506')" name="code2model" class="code2model">
+FET_CTRL
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:515')" name="code2model" class="code2model">
+Multiply-Add
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:517')" name="code2model" class="code2model">
+Subtract
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:536')" name="code2model" class="code2model">
+Gain1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:514')" name="code2model" class="code2model">
+Gain3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+
+</table>
+<br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:511')" name="code2model" class="code2model">
+Discrete-Time
+Integrator_reg_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    streaming_partition_streamed
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+dtc
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+7
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point
+State-Space/hNNewMatrixA/dot_product_6
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+sum_stage3_1_wire
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point
+State-Space/hNNewMatrixC/dot_product_7
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+sum_stage3_1_wire
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+19
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point
+State-Space/hNNewMatrixD/dot_product_7
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+sum_stage3_1_wire
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+19
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:432')" name="code2model" class="code2model">
+HDL Subsystem
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+terminator
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+<br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+State_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point
+State-Space/hNNewMatrixB/dot_product_9
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+multiplier
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:556')" name="code2model" class="code2model">
+sum_stage4_1_wire
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:629')" name="code2model" class="code2model">
+real2uint8
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:807')" name="code2model" class="code2model">
+mux
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:805')" name="code2model" class="code2model">
+mux
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1031')" name="code2model" class="code2model">
+Data Type Conversion4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:601')" name="code2model" class="code2model">
+Data Type Conversion5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1029')" name="code2model" class="code2model">
+Data Type Conversion2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:616')" name="code2model" class="code2model">
+Gain3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:617')" name="code2model" class="code2model">
+Gain4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:680')" name="code2model" class="code2model">
+Add3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1028')" name="code2model" class="code2model">
+Data Type Conversion1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1030')" name="code2model" class="code2model">
+Data Type Conversion3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:612')" name="code2model" class="code2model">
+Add2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1034')" name="code2model" class="code2model">
+
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:615')" name="code2model" class="code2model">
+Gain2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:684')" name="code2model" class="code2model">
+Gain5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1035')" name="code2model" class="code2model">
+Gain1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1.0466e-08
+</td>
+<td align="left" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+
+</table>
+<br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:678')" name="code2model" class="code2model">
+Delay29
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:674')" name="code2model" class="code2model">
+Delay25
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:652')" name="code2model" class="code2model">
+Delay3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:657')" name="code2model" class="code2model">
+Delay8_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:661')" name="code2model" class="code2model">
+Delay12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:673')" name="code2model" class="code2model">
+Delay24
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1033')" name="code2model" class="code2model">
+Delay5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:650')" name="code2model" class="code2model">
+Delay1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:665')" name="code2model" class="code2model">
+Delay16
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:682')" name="code2model" class="code2model">
+Delay11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:651')" name="code2model" class="code2model">
+Delay2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:655')" name="code2model" class="code2model">
+Delay6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:658')" name="code2model" class="code2model">
+Delay9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:1032')" name="code2model" class="code2model">
+Delay4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:649')" name="code2model" class="code2model">
+Delay
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('HDL_pfc_gold_fi_og:671')" name="code2model" class="code2model">
+Delay22
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+5.1282e-07
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><br /><br /><br />
+</body>
+
+</html>

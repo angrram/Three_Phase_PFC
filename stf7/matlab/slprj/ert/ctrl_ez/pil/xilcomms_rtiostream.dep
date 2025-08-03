@@ -1,0 +1,22 @@
+xilcomms_rtiostream.o: \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.c \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.h \
+ C:/Users/Angel/Desktop/hil/pfc3ph/stf7/matlab/slprj/ert/ctrl_ez/pil/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/comms_interface.h \
+ C:/Program\ Files/MATLAB/R2024b/toolbox/coder/rtiostream/src/rtiostream.h \
+ C:/Program\ Files/MATLAB/R2024b/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/rx_tx_buffer_sizes.h \
+ C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/xil_common.h \
+ C:/Program\ Files/MATLAB/R2024b/extern/include/coder/connectivity/XILTgtAppSvc/XILTgtAppSvc.h \
+ C:/Program\ Files/MATLAB/R2024b/extern/include/coder/connectivity/XILTgtAppSvc/XILTgtAppSvc_spec.h \
+ C:/Program\ Files/MATLAB/R2024b/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.h
+C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.h:
+C:/Users/Angel/Desktop/hil/pfc3ph/stf7/matlab/slprj/ert/ctrl_ez/pil/rtwtypes.h:
+C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/comms_interface.h:
+C:/Program\ Files/MATLAB/R2024b/toolbox/coder/rtiostream/src/rtiostream.h:
+C:/Program\ Files/MATLAB/R2024b/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h:
+C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/rx_tx_buffer_sizes.h:
+C:/PROGRA~1/MATLAB/R2024b/toolbox/rtw/targets/pil/c/xil_common.h:
+C:/Program\ Files/MATLAB/R2024b/extern/include/coder/connectivity/XILTgtAppSvc/XILTgtAppSvc.h:
+C:/Program\ Files/MATLAB/R2024b/extern/include/coder/connectivity/XILTgtAppSvc/XILTgtAppSvc_spec.h:
+C:/Program\ Files/MATLAB/R2024b/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.h:

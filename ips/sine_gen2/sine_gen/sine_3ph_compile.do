@@ -1,0 +1,9 @@
+vlib work
+vlog  sine_3ph_tc.v
+vlog  Lookup_Table3.v
+vlog  va.v
+vlog  Lookup_Table3_block.v
+vlog  vb.v
+vlog  Lookup_Table3_block1.v
+vlog  vc.v
+vlog  sine_3ph.v

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Dec 26 13:06:00 2024
+# Process ID: 18104
+# Current directory: C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/vivado_prj
+# Command line: vivado.exe -mode batch -notrace -source simscape_system_Xilinx_Vivado_run.tcl
+# Log file: C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/vivado_prj/vivado.log
+# Journal file: C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/vivado_prj\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :19327 MB
+# Total Virtual     :27762 MB
+# Available Virtual :12792 MB
+#-----------------------------------------------------------
+source simscape_system_Xilinx_Vivado_run.tcl -notrace

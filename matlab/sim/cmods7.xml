@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FPGABoard Version="1.0">
+  <BoardName>Cmod S7</BoardName>
+  <FPGA Device="xc7s25csga225-1" Family="Spartan7" JTAGChainPosition="1" Package="" Speed="" Vendor="AMD">
+    <Interface>
+      <Type>Clock</Type>
+      <Parameter ID="ClockType">Single-Ended</Parameter>
+      <Parameter ID="Frequency">12</Parameter>
+      <Signal>
+        <SignalName>Clock</SignalName>
+        <Description>Clock</Description>
+        <Direction>in</Direction>
+        <BitWidth>1</BitWidth>
+        <FPGAPin>M9</FPGAPin>
+        <IOStandard>LVCMOS33</IOStandard>
+      </Signal>
+    </Interface>
+    <Interface>
+      <Type>JTAG</Type>
+      <Parameter ID="User1Cmd">000010</Parameter>
+      <Parameter ID="InstrRegLenBefore">0</Parameter>
+      <Parameter ID="InstrRegLenAfter">0</Parameter>
+      <Parameter ID="TckFrequency">66</Parameter>
+    </Interface>
+    <Interface>
+      <Type>Reset</Type>
+      <Parameter ID="ActiveLevel">Active-High</Parameter>
+      <Signal>
+        <SignalName>Reset</SignalName>
+        <Description>Reset</Description>
+        <Direction>in</Direction>
+        <BitWidth>1</BitWidth>
+        <FPGAPin>D2</FPGAPin>
+        <IOStandard>LVCMOS33</IOStandard>
+      </Signal>
+    </Interface>
+  </FPGA>
+</FPGABoard>

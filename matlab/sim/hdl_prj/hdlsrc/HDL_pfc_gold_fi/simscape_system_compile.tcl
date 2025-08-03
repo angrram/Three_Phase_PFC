@@ -1,0 +1,13 @@
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/simscape_system_tc.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/SimpleDualPortRAM_generic.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/FET_CTRL.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_9.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixB.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_6.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixA.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixC.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/dot_product_7_block.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/hNNewMatrixD.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/HDL_Subsystem.v
+add_files -fileset sim_1 -norecurse C:/Users/angro/Desktop/hil/pfc3ph/matlab/sim/hdl_prj/hdlsrc/HDL_pfc_gold_fi/simscape_system.v

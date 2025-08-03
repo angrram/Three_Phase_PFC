@@ -1,0 +1,47 @@
+verilog xil_defaultlib --include "../../../../pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/3cbc" --include "../../../../pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog" --include "../../../../pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog" --include "../../../../pfc_3ph_lite.gen/sources_1/bd/design_1/ipshared/4506/hdl" \
+"../../../bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_15/design_1_clk_wiz_15.v" \
+"../../../bd/design_1/ipshared/e211/31cb/Wrap_To_Zero.v" \
+"../../../bd/design_1/ipshared/e211/31cb/cnter.v" \
+"../../../bd/design_1/ipshared/e211/31cb/Increment_Real_World.v" \
+"../../../bd/design_1/ipshared/e211/src/amc_simulator.v" \
+"../../../bd/design_1/ip/design_1_amc_simulator_0_0/sim/design_1_amc_simulator_0_0.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/ShiftRegisterRAM_Wrapper_generic.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/simscape_system_tc.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/dot_product_7_block.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/dot_product_7.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/dot_product_6.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/dot_product_9.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/FET_CTRL.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/HDL_Subsystem.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/hNNewMatrixA.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/real2uint8.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/SimpleDualPortRAM_generic.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/hNNewMatrixB.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/hNNewMatrixC.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/hNNewMatrixD.v" \
+"../../../bd/design_1/ipshared/HDL_pfc_gold_fi_og/simscape_system.v" \
+"../../../bd/design_1/ip/design_1_PFC3PH_0_0/sim/design_1_PFC3PH_0_0.v" \
+"../../../bd/design_1/ipshared/815e/hdlsrc/int2bin_sdi/SPI_MNGR.v" \
+"../../../bd/design_1/ipshared/815e/hdlsrc/int2bin_sdi/simfcn1.v" \
+"../../../bd/design_1/ipshared/815e/hdlsrc/int2bin_sdi/SPI_DAC.v" \
+"../../../bd/design_1/ip/design_1_MCP_DRIVER_0_0/sim/design_1_MCP_DRIVER_0_0.v" \
+"../../../bd/design_1/ip/design_1_amc_simulator_0_1/sim/design_1_amc_simulator_0_1.v" \
+"../../../bd/design_1/ip/design_1_amc_simulator_1_0/sim/design_1_amc_simulator_1_0.v" \
+"../../../bd/design_1/ipshared/f66d/Lookup_Table3_block1.v" \
+"../../../bd/design_1/ipshared/f66d/Lookup_Table3.v" \
+"../../../bd/design_1/ipshared/f66d/Lookup_Table3_block.v" \
+"../../../bd/design_1/ipshared/f66d/vc.v" \
+"../../../bd/design_1/ipshared/f66d/vb.v" \
+"../../../bd/design_1/ipshared/f66d/sine_3ph_tc.v" \
+"../../../bd/design_1/ipshared/f66d/va.v" \
+"../../../bd/design_1/ipshared/f66d/sine_3ph.v" \
+"../../../bd/design_1/ip/design_1_sine_3ph_0_0/sim/design_1_sine_3ph_0_0.v" \
+"../../../bd/design_1/ip/design_1_vio_0_0/sim/design_1_vio_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

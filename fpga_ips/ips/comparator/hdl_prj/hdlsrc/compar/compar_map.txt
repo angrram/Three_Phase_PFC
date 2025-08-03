@@ -1,0 +1,2 @@
+compar/comp --> comp
+compar --> compar

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Dec 31 12:13:11 2024
+# Process ID: 19912
+# Current directory: c:/Users/angro/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.tmp/sine_wave3ph.runs/synth_1
+# Command line: vivado.exe -log sine_3ph.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sine_3ph.tcl
+# Log file: c:/Users/angro/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.tmp/sine_wave3ph.runs/synth_1/sine_3ph.vds
+# Journal file: c:/Users/angro/Desktop/hil/pfc3ph/vivado_lite/pfc_3ph_lite.tmp/sine_wave3ph.runs/synth_1\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :25578 MB
+# Total Virtual     :34012 MB
+# Available Virtual :15200 MB
+#-----------------------------------------------------------
+source sine_3ph.tcl -notrace

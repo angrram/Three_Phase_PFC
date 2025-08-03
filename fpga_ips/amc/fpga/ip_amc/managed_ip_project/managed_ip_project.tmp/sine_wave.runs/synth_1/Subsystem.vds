@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Oct 30 18:37:33 2024
+# Process ID: 2452
+# Current directory: c:/Users/angro/Desktop/hil/amc/fpga/ip_amc/managed_ip_project/managed_ip_project.tmp/sine_wave.runs/synth_1
+# Command line: vivado.exe -log Subsystem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Subsystem.tcl
+# Log file: c:/Users/angro/Desktop/hil/amc/fpga/ip_amc/managed_ip_project/managed_ip_project.tmp/sine_wave.runs/synth_1/Subsystem.vds
+# Journal file: c:/Users/angro/Desktop/hil/amc/fpga/ip_amc/managed_ip_project/managed_ip_project.tmp/sine_wave.runs/synth_1\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :17179 MB
+# Total Virtual     :25614 MB
+# Available Virtual :9067 MB
+#-----------------------------------------------------------
+source Subsystem.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 484.223 ; gain = 200.859
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/angro/Desktop/hil/amc/hdlsrc/amc_simulator'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/users/angro/desktop/hil/amc/fpga/ip_amc/managed_ip_project/managed_ip_project.tmp/sine_wave.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental c:/users/angro/desktop/hil/amc/fpga/ip_amc/managed_ip_project/managed_ip_project.tmp/sine_wave.srcs/utils_1/imports/synth_1/Subsystem.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from c:/users/angro/desktop/hil/amc/fpga/ip_amc/managed_ip_project/managed_ip_project.tmp/sine_wave.srcs/utils_1/imports/synth_1/Subsystem.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Subsystem -part xc7s25csga225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11680
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 953.219 ; gain = 453.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Subsystem' [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Subsystem.v:44]
+INFO: [Synth 8-6157] synthesizing module 'Subsystem_tc' [C:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Subsystem_tc.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'Subsystem_tc' (0#1) [C:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Subsystem_tc.v:27]
+INFO: [Synth 8-6157] synthesizing module 'alpha50kHz' [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/alpha50kHz.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Lookup_Table3_block1' [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Lookup_Table3_block1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lookup_Table3_block1' (0#1) [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Lookup_Table3_block1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alpha50kHz' (0#1) [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/alpha50kHz.v:24]
+INFO: [Synth 8-6157] synthesizing module 'alpha100kHz' [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/alpha100kHz.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Lookup_Table3' [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Lookup_Table3.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lookup_Table3' (0#1) [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Lookup_Table3.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alpha100kHz' (0#1) [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/alpha100kHz.v:24]
+INFO: [Synth 8-6157] synthesizing module 'alpha200kHz' [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/alpha200kHz.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Lookup_Table3_block' [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Lookup_Table3_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lookup_Table3_block' (0#1) [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Lookup_Table3_block.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alpha200kHz' (0#1) [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/alpha200kHz.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Subsystem' (0#1) [c:/Users/angro/Desktop/hil/amc/sine_gen/sine_gen/Subsystem.v:44]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1065.922 ; gain = 565.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1065.922 ; gain = 565.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1065.922 ; gain = 565.844
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1065.922 ; gain = 565.844
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7s25csga225-1 does not have CEAM library.
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------------+---------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                        | Depth x Width | Implemented As | 
++---------------------+---------------------------------------------------+---------------+----------------+
+|Lookup_Table3_block1 | Lookup_Table3_table_data                          | 512x8         | LUT            | 
+|Lookup_Table3        | Lookup_Table3_table_data                          | 256x8         | LUT            | 
+|Lookup_Table3_block  | Lookup_Table3_table_data                          | 128x8         | LUT            | 
+|Subsystem            | u_50kHz/u_Lookup_Table3/Lookup_Table3_table_data  | 512x8         | LUT            | 
+|Subsystem            | u_100kHz/u_Lookup_Table3/Lookup_Table3_table_data | 256x8         | LUT            | 
+|Subsystem            | u_200kHz/u_Lookup_Table3/Lookup_Table3_table_data | 128x8         | LUT            | 
++---------------------+---------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     5|
+|3     |LUT2  |    11|
+|4     |LUT3  |    20|
+|5     |LUT4  |    15|
+|6     |LUT5  |    21|
+|7     |LUT6  |   119|
+|8     |MUXF7 |    35|
+|9     |MUXF8 |     9|
+|10    |FDRE  |    31|
+|11    |IBUF  |     2|
+|12    |OBUF  |    25|
++------+------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------+------+
+|      |Instance            |Module               |Cells |
++------+--------------------+---------------------+------+
+|1     |top                 |                     |   294|
+|2     |  u_100kHz          |alpha100kHz          |    80|
+|3     |    u_Lookup_Table3 |Lookup_Table3        |    53|
+|4     |  u_200kHz          |alpha200kHz          |    53|
+|5     |    u_Lookup_Table3 |Lookup_Table3_block  |    26|
+|6     |  u_50kHz           |alpha50kHz           |   117|
+|7     |    u_Lookup_Table3 |Lookup_Table3_block1 |    88|
+|8     |  u_Subsystem_tc    |Subsystem_tc         |    16|
++------+--------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1238.926 ; gain = 738.848
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1246.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1339.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 447fd67
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 1339.141 ; gain = 845.660
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1339.141 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Users/angro/Desktop/hil/amc/fpga/ip_amc/managed_ip_project/managed_ip_project.tmp/sine_wave.runs/synth_1/Subsystem.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Subsystem_utilization_synth.rpt -pb Subsystem_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 18:38:12 2024...

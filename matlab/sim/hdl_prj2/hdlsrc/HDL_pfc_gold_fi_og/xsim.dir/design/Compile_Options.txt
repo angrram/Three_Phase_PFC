@@ -1,0 +1,1 @@
+"simscape_system" --timescale "1ps/1ps" --override_timeunit --override_timeprecision -dll --snapshot "design" -debug "wave" 

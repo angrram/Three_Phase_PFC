@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec 30 10:59:31 2024
+# Process ID: 11932
+# Current directory: c:/Users/angro/Desktop/hil/pfc3ph/ips/managed_ip_project/managed_ip_project.tmp/pfc3ph_inter_v1_0_project/pfc3ph_inter_v1_0_project.runs/synth_1
+# Command line: vivado.exe -log pfc3ph_inter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfc3ph_inter.tcl
+# Log file: c:/Users/angro/Desktop/hil/pfc3ph/ips/managed_ip_project/managed_ip_project.tmp/pfc3ph_inter_v1_0_project/pfc3ph_inter_v1_0_project.runs/synth_1/pfc3ph_inter.vds
+# Journal file: c:/Users/angro/Desktop/hil/pfc3ph/ips/managed_ip_project/managed_ip_project.tmp/pfc3ph_inter_v1_0_project/pfc3ph_inter_v1_0_project.runs/synth_1\vivado.jou
+# Running On        :Angel
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8434 MB
+# Swap memory       :19327 MB
+# Total Virtual     :27762 MB
+# Available Virtual :15139 MB
+#-----------------------------------------------------------
+source pfc3ph_inter.tcl -notrace

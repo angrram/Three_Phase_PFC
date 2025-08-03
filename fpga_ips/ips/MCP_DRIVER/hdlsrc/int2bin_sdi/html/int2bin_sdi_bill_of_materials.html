@@ -1,0 +1,671 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+High-level Resource Utilization Report for int2bin_sdi
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdBillOfMaterials'); else local_onload();}} catch(err) {};hdlTableShrink(this, 'Register_1_1');hdlTableShrink(this, 'Register_1_2');hdlTableShrink(this, 'Multiplexer_1_1');hdlTableShrink(this, 'Input_Port');hdlTableShrink(this, 'Output_Port');">
+<script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<font SIZE="+2" COLOR="#000066">
+Generic Resource Report for int2bin_sdi
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Multipliers
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Adders/Subtractors
+</td>
+<td align="center" valign="top" style="border-style: none">
+18
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+92
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Total 1-Bit Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+381
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+RAMs
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Multiplexers
+</td>
+<td align="center" valign="top" style="border-style: none">
+5386
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+I/O Bits
+</td>
+<td align="center" valign="top" style="border-style: none">
+154
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Static Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+176
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Dynamic Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('int2bin_sdi:298')" name="code2model" class="code2model">
+SPI_DAC
+</a>
+
+</h5>
+<h5>
+Registers (34)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16-bit Register 							: 8
+</span>
+<span name="Register_1_1" id="Register_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:384')" name="code2model" class="code2model">
+Delay1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:429')" name="code2model" class="code2model">
+Delay2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:430')" name="code2model" class="code2model">
+Delay3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:431')" name="code2model" class="code2model">
+Delay4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:432')" name="code2model" class="code2model">
+Delay5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:433')" name="code2model" class="code2model">
+Delay12
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:434')" name="code2model" class="code2model">
+Delay13
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:435')" name="code2model" class="code2model">
+Delay14
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 26
+</span>
+<span name="Register_1_2" id="Register_1_2">
+<ul class="SystemdefinedCollapse" id="ff881283-c3ee-4c70-9b30-10f7eca777d3" dataCollapse="off">
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:403')" name="code2model" class="code2model">
+Delay10
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:402')" name="code2model" class="code2model">
+Delay9
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:47')" name="code2model" class="code2model">
+Delay8_ctrl_delay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:401')" name="code2model" class="code2model">
+Delay8
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:43')" name="code2model" class="code2model">
+Delay7_ctrl_delay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:400')" name="code2model" class="code2model">
+Delay7
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:39')" name="code2model" class="code2model">
+Delay6_ctrl_delay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:399')" name="code2model" class="code2model">
+Delay6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:35')" name="code2model" class="code2model">
+Delay11_ctrl_delay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:343')" name="code2model" class="code2model">
+Delay11
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:418')" name="code2model" class="code2model">
+Delay15
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'ff881283-c3ee-4c70-9b30-10f7eca777d3')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><h5>
+Multiplexers (4)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 4
+</span>
+<span name="Multiplexer_1_1" id="Multiplexer_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:48')" name="code2model" class="code2model">
+Delay8_switch
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:44')" name="code2model" class="code2model">
+Delay7_switch
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:40')" name="code2model" class="code2model">
+Delay6_switch
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('gm_int2bin_sdi:36')" name="code2model" class="code2model">
+Delay11_switch
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Number of I/O Bits (154)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Input_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Input Bits: 131
+</span>
+<span name="Input_Port" id="Input_Port">
+<ul class="SystemdefinedCollapse" id="4f420404-654c-478f-843c-964265f160c5" dataCollapse="off">
+<li>
+clk: 1 bit
+</li>
+<li>
+rst: 1 bit
+</li>
+<li>
+clk_enable: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:300')" name="code2model" class="code2model">
+v1_1
+</a>
+: 16 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:301')" name="code2model" class="code2model">
+v1_2
+</a>
+: 16 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:302')" name="code2model" class="code2model">
+v2_1
+</a>
+: 16 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:303')" name="code2model" class="code2model">
+v2_2
+</a>
+: 16 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:305')" name="code2model" class="code2model">
+v3_2
+</a>
+: 16 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:304')" name="code2model" class="code2model">
+v3_1
+</a>
+: 16 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:345')" name="code2model" class="code2model">
+v4_1
+</a>
+: 16 bits
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:347')" name="code2model" class="code2model">
+v4_2
+</a>
+: 16 bits
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '4f420404-654c-478f-843c-964265f160c5')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Output_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Output Bits: 23
+</span>
+<span name="Output_Port" id="Output_Port">
+<ul class="SystemdefinedCollapse" id="7d8efb98-4866-473f-8fe4-f1ad8a42dd47" dataCollapse="off">
+<li>
+ce_out: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:307')" name="code2model" class="code2model">
+SDI
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:308')" name="code2model" class="code2model">
+SCK
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:309')" name="code2model" class="code2model">
+nCS1
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:310')" name="code2model" class="code2model">
+nCS2
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:311')" name="code2model" class="code2model">
+nCS3
+</a>
+: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('int2bin_sdi:344')" name="code2model" class="code2model">
+nCS4
+</a>
+: 1 bit
+</li>
+<li>
+debug_0: 1 bit
+</li>
+<li>
+debug_1: 1 bit
+</li>
+<li>
+debug_2: 1 bit
+</li>
+<li>
+debug_3: 1 bit
+</li>
+<li>
+debug_4: 1 bit
+</li>
+<li>
+debug_5: 1 bit
+</li>
+<li>
+debug_6: 1 bit
+</li>
+<li>
+debug_7: 1 bit
+</li>
+<li>
+debug_8: 1 bit
+</li>
+<li>
+debug_9: 1 bit
+</li>
+<li>
+debug_10: 1 bit
+</li>
+<li>
+debug_11: 1 bit
+</li>
+<li>
+debug_12: 1 bit
+</li>
+<li>
+debug_13: 1 bit
+</li>
+<li>
+debug_14: 1 bit
+</li>
+<li>
+debug_15: 1 bit
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '7d8efb98-4866-473f-8fe4-f1ad8a42dd47')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('int2bin_sdi:306')" name="code2model" class="code2model">
+SPI_MNGR
+</a>
+
+</h5>
+<h5>
+Adders/Subtractors (18)
+</h5>
+<span style="font-family:monospace">
+17x17-bit Adder 							: 7
+</span>
+<br /><span style="font-family:monospace">
+32x32-bit Subtractor 							: 11
+</span>
+<br /><h5>
+Registers (58)
+</h5>
+<span style="font-family:monospace">
+1-bit Register 							: 46
+</span>
+<br /><span style="font-family:monospace">
+16-bit Register 							: 11
+</span>
+<br /><span style="font-family:monospace">
+5-bit Register 							: 1
+</span>
+<br /><h5>
+Multiplexers (5382)
+</h5>
+<span style="font-family:monospace">
+5-bit 2-to-1 Multiplexer 							: 30
+</span>
+<br /><span style="font-family:monospace">
+16-bit 2-to-1 Multiplexer 							: 90
+</span>
+<br /><span style="font-family:monospace">
+16-bit 15-to-1 Multiplexer 							: 11
+</span>
+<br /><span style="font-family:monospace">
+5-bit 15-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 2237
+</span>
+<br /><span style="font-family:monospace">
+1-bit 15-to-1 Multiplexer 							: 259
+</span>
+<br /><span style="font-family:monospace">
+32-bit 2-to-1 Multiplexer 							: 2354
+</span>
+<br /><span style="font-family:monospace">
+32-bit 15-to-1 Multiplexer 							: 400
+</span>
+<br /><h5>
+Number of Shift operators (176)
+</h5>
+<span style="font-family:monospace">
+Static Shift Right 							: 176
+</span>
+<br /><p><hr /></p>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+simscape_system_tc --> simscape_system_tc
+HDL_pfc_gold_fi_og/simscape_system/FET_CTRL/ShiftRegisterRAM_Wrapper_generic/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+HDL_pfc_gold_fi_og/simscape_system/FET_CTRL/ShiftRegisterRAM_Wrapper_generic --> ShiftRegisterRAM_Wrapper_generic
+HDL_pfc_gold_fi_og/simscape_system/FET_CTRL/ShiftRegisterRAM_Wrapper_singlebit/SimpleDualPortRAM_singlebit --> SimpleDualPortRAM_singlebit
+HDL_pfc_gold_fi_og/simscape_system/FET_CTRL/ShiftRegisterRAM_Wrapper_singlebit --> ShiftRegisterRAM_Wrapper_singlebit
+HDL_pfc_gold_fi_og/simscape_system/FET_CTRL --> FET_CTRL
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixB/dot_product_9 --> dot_product_9
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixB --> hNNewMatrixB
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixA/dot_product_6 --> dot_product_6
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixA --> hNNewMatrixA
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixC/dot_product_7 --> dot_product_7
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixC --> hNNewMatrixC
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixD/dot_product_7 --> dot_product_7_block
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem/Fixed-Point State-Space/hNNewMatrixD --> hNNewMatrixD
+HDL_pfc_gold_fi_og/simscape_system/HDL Subsystem --> HDL_Subsystem
+HDL_pfc_gold_fi_og/simscape_system/real2uint8 --> real2uint8
+HDL_pfc_gold_fi_og/simscape_system --> simscape_system

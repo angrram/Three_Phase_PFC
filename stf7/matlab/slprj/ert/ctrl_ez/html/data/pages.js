@@ -1,0 +1,1 @@
+var reportPages = [["Summary","ctrl_ez_survey.html"],["Subsystem Report","ctrl_ez_subsystems.html"],["Traceability Report","ctrl_ez_trace.html"],["Static Code Metrics Report","ctrl_ez_metrics.html"],["Eliminated Blocks","ctrl_ez_reducedblocks.html"],["Code Replacements Report","ctrl_ez_replacements.html"],["Coder Assumptions","ctrl_ez_coderassumptions.html"]];

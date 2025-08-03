@@ -1,0 +1,1 @@
+var modelInfo = {model:"dsogi_3phpll"};var modelHierarchy=[{model:"dsogi_3phpll",relativePath:"_internal.html",parent:"null"},];var AddCode = true;var ProtectedModel = false;

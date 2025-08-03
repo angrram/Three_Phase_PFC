@@ -1,0 +1,8 @@
+sine_3ph_tc --> sine_3ph_tc
+sine_gen/sine_3ph/va/Lookup Table3 --> Lookup_Table3
+sine_gen/sine_3ph/va --> va
+sine_gen/sine_3ph/vb/Lookup Table3 --> Lookup_Table3_block
+sine_gen/sine_3ph/vb --> vb
+sine_gen/sine_3ph/vc/Lookup Table3 --> Lookup_Table3_block1
+sine_gen/sine_3ph/vc --> vc
+sine_gen/sine_3ph --> sine_3ph

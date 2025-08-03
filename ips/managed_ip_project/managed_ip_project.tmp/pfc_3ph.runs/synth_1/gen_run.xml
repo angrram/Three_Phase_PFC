@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7s25csga225-1" LaunchTime="1733675241">
+  <File Type="PA-TCL" Name="FPGA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FPGA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="FPGA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FPGA.vds"/>
+  <File Type="RDS-UTIL" Name="FPGA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FPGA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FPGA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FPGA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FPGA_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/DA_MATRIX.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Detect_Rise_Positive.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Detect_Rise_Positive1.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/FPGA_tc.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/HDL_Algorithm.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/HDL_Subsystem.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/MUAC_DSP_2.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Positive.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Positive_block.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Sample_and_Hold.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Sample_and_Hold1.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/SimpleDualPortRAM_generic.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/Subsystem.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/a_b_sub.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/dsp_block.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/FPGA.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FPGA"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../../../../../Users/angro/Desktop/hil/3phase_pfc_vanilla/ips/gm_pfcvan3ph_s/clock_constraint.xdc">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2024">
+      <Desc>Performs general area optimizations including changing the threshold for control set optimizations, forcing ternary adder implementation, applying lower thresholds for use of carry chain in comparators and also area optimized mux optimizations.</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="ControlSetOptThreshold">1</Option>
+      <Option Id="Directive">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>
