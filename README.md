@@ -1,6 +1,6 @@
 # Hardware-in-the-Loop (DiY) with STM32F7 & Spartan-7 (Cmod S7)
 
-# ⚡   Three-Phase Boost PFC (Phase Lock Lookup) 
+# ⚡   Three-Phase Boost PFC (DQ controll & DSOGI PLL) 
 
 Blue: VDC
 Green: IAC1
