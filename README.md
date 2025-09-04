@@ -6,8 +6,11 @@
 - Green: IAC1
   
  ![IMG_3001](https://github.com/user-attachments/assets/965281d8-26f1-4e53-920c-ff94b99f25d3)
+ - Starting the controller VDC increases and the amplitud of IAC
 <img width="1250" height="881" alt="Pasted image 20250511104047" src="https://github.com/user-attachments/assets/ec46c701-d324-4950-be88-652f79f3bce3" />
+- Load dump from IDC = 8A to 0A
 <img width="1252" height="886" alt="Pasted image 20250511104250" src="https://github.com/user-attachments/assets/f80536e8-9f37-45f2-bca7-b0103ae949f8" />
+- Load increase from IDC = 0A to 8A
 <img width="1260" height="883" alt="Pasted image 20250511104432" src="https://github.com/user-attachments/assets/21e63108-2f31-42b0-ad9c-b97e8b5e1981" />
 
 
