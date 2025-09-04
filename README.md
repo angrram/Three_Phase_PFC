@@ -2,8 +2,9 @@
 
 # ⚡   Three-Phase Boost PFC (DQ control & DSOGI PLL) 
 
-Blue: VDC
-Green: IAC1
+- Blue: VDC
+- Green: IAC1
+  
  ![IMG_3001](https://github.com/user-attachments/assets/965281d8-26f1-4e53-920c-ff94b99f25d3)
 <img width="1250" height="881" alt="Pasted image 20250511104047" src="https://github.com/user-attachments/assets/ec46c701-d324-4950-be88-652f79f3bce3" />
 <img width="1252" height="886" alt="Pasted image 20250511104250" src="https://github.com/user-attachments/assets/f80536e8-9f37-45f2-bca7-b0103ae949f8" />
