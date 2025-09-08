@@ -1,4 +1,4 @@
-# Three-Phase Boost PFC (DQ control & DSOGI PLL) Hardware-in-the-Loop (DiY) with STM32F7 & Spartan-7 (Cmod S7)
+# Three-Phase AC/DC Boost PFC (DQ control & DSOGI PLL) Hardware-in-the-Loop (DiY) with STM32F7 & Spartan-7 (Cmod S7)
 
 # ⚡   Three-Phase Boost PFC (DQ control & DSOGI PLL) 
 I've made public this repository to honor the hours spended looking for a discrete component simulation of a 3 phase PFC using PLL-DSOGI & DQ control. You can not find all of them in one place or simply the blocks are obscure (not even the owner knows what's going on).
