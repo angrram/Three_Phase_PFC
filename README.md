@@ -6,6 +6,8 @@ I've made public this repository to honor the hours spended looking for a discre
 The MIL (Model in the loop) simulation contains both a linear model of a PFC (FPGA/HIL implementation) and a nonlinear model for more fidelity. The pfc_control.slx is use for MIL & PIL & code generated directly to the SMT32F7 which is also one thing I was always looking to find on the internet but never could.
 
 Hope you enjoy.     
+<img width="284" height="177" alt="image" src="https://github.com/user-attachments/assets/cff5d2e2-85c6-4d95-a118-fce55079a992" />
+
 
 
 - Blue: VDC
