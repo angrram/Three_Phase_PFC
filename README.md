@@ -1,9 +1,8 @@
 # Three-Phase AC/DC Boost PFC (DQ control & DSOGI PLL) Hardware-in-the-Loop (DiY) with STM32F7 & Spartan-7 (Cmod S7)
 
 # ⚡   Three-Phase Boost PFC (DQ control & DSOGI PLL) 
-I've made public this repository to honor the hours spended looking for a discrete component simulation of a 3 phase PFC using PLL-DSOGI & DQ control. You can not find all of them in one place or simply the blocks are obscure (not even the owner knows what's going on).
 
-The MIL (Model in the loop) simulation contains both a linear model of a PFC (FPGA/HIL implementation) and a nonlinear model for more fidelity. The pfc_control.slx is use for MIL & PIL & code generated directly to the SMT32F7 which is also one thing I was always looking to find on the internet but never could.
+The MIL (Model in the loop) simulation contains both a linear model of the FETs (FPGA/HIL implementation which could be use upto 8Arms AC) and a nonlinear model for more fidelity. The Simulink model for the VHDL runs at cir 98MHz. The Vivado Project contains all IPs (PFC, DAC driver etc.) The pfc_control.slx is use for MIL & PIL & code generated directly to the SMT32F7 which is also one thing I was always looking to find on the internet but never could.
 
 Hope you enjoy.     
 <img width="284" height="177" alt="image" src="https://github.com/user-attachments/assets/cff5d2e2-85c6-4d95-a118-fce55079a992" />
